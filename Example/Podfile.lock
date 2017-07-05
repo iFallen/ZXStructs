@@ -1,0 +1,16 @@
+PODS:
+  - ZXStructs (0.1.0)
+
+DEPENDENCIES:
+  - ZXStructs (from `../`)
+
+EXTERNAL SOURCES:
+  ZXStructs:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZXStructs: 6715197adafc32dc3005d1eb662582e2162a9a5e
+
+PODFILE CHECKSUM: d211aef3e7927e4a6c4dde5dc5eb154cf7899a3d
+
+COCOAPODS: 1.3.0.beta.1

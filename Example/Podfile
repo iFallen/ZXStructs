@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'ZXStructs_Example' do
   pod 'ZXStructs', :path => '../'
-
-  target 'ZXStructs_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
