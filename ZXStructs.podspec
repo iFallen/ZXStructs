@@ -16,6 +16,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files          = 'ZXStructs/**/*.swift'
-  s.resource              = 'ZXStructs/**/ZXSettings.bundle'
+  s.resource              = 'ZXStructs/ZXSettings.bundle'
   s.public_header_files   = 'ZXStructs/*.h'
 end

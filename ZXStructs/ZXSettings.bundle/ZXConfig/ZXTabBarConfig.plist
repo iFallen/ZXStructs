@@ -7,7 +7,7 @@
 	<key>zx_isTranslucent</key>
 	<false/>
 	<key>zx_backgroundColor</key>
-	<string>#ffffff</string>
+	<string>#0000ff</string>
 	<key>zx_titleNormalColor</key>
 	<string>#afaaae</string>
 	<key>zx_titleSelectedColor</key>

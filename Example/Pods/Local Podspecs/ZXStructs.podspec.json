@@ -19,6 +19,6 @@
     "ios": "8.0"
   },
   "source_files": "ZXStructs/**/*.swift",
-  "resources": "ZXStructs/**/ZXSettings.bundle",
+  "resources": "ZXStructs/ZXSettings.bundle",
   "public_header_files": "ZXStructs/*.h"
 }

@@ -179,14 +179,14 @@ extension UIViewController {
     /// Right Bar Button Action
     ///
     /// - Parameter index: index 0...
-    public func zx_rightBarButtonAction(index: Int) {
+    open func zx_rightBarButtonAction(index: Int) {
         
     }
     
     /// Left BarButton Action
     ///
     /// - Parameter index: index 0...
-    public func zx_leftBarButtonAction(index: Int) {
+    open func zx_leftBarButtonAction(index: Int) {
         
     }
     

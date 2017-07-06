@@ -23,15 +23,15 @@ extension UIViewController {
         notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
-    public func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {
+    open func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {
         
     }
     
-    public func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {
+    open func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {
         
     }
     
-    public func zx_keyboardWillChangeFrame(beginRect:CGRect,endRect: CGRect,duration dt:Double,userInfo:Dictionary<String,Any>) {
+    open func zx_keyboardWillChangeFrame(beginRect:CGRect,endRect: CGRect,duration dt:Double,userInfo:Dictionary<String,Any>) {
         
     }
     
@@ -73,11 +73,11 @@ extension UIViewController {
     }
     
     //MARK: - 
-    public func zx_refresh() {
+    open func zx_refresh() {
         
     }
     
-    public func zx_loadmore() {
+    open func zx_loadmore() {
         
     }
 }
