@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXStructs'
-  s.version          = '0.9.1'
+  s.version          = '0.9.2'
   s.summary          = 'ZXStructs.For iOS Common UI Config'
 
   s.description      = <<-DESC
@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
 
   s.source_files          = 'ZXStructs/**/*.swift'
   s.resource              = 'ZXStructs/ZXSettings.bundle'
+  s.dependency            'ZXAutoScrollView'
+  s.dependency            'HImagePickerUtils'
 end

@@ -7,119 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		082DDCE9D82A3FF76B49B29C9F14555B /* NSAttributedString+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A858EDDC5B30078D21F3B9F32C3B4CC /* NSAttributedString+ZX.swift */; };
-		0990472C36BB39F439A55C95C9216494 /* ZXTabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF361D5C4920302EB808E2629C89440 /* ZXTabbarConfig.swift */; };
-		18BA5A616442D4BAEAC1E6D9F0810610 /* Pods-ZXStructs_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1115755F9754C8A87E459C3AAECAAB /* Pods-ZXStructs_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18BCB945B06DBF5E889C45B8CBB28FA0 /* ZXStructs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E93BF721605CD2F70799293EDB1BD5F /* ZXStructs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2465672990548B302F7E18647E26973D /* ZXAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5E5A2427BCEC797274E8D23DDCBEA /* ZXAutoScrollView.swift */; };
-		32914CB0506066360249C6FB926D6D7E /* UIFont+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4885263E42FB4B7822CF8B320EF92954 /* UIFont+ZX.swift */; };
-		333C921E5E287DB67C78120E60D832D9 /* ZXCommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB0CF1144BE988F7AF1EA75AE614060 /* ZXCommonUtils.swift */; };
-		343BDD9CA74CE3B1D9FAA855556D4AD4 /* ZXStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32872793600DE6A61329FB755E65CDBD /* ZXStructs.swift */; };
-		360FECBFD2768D2688F8927CF34C8B78 /* ZXFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE43A8FE4C517512544D30A2362F9B6C /* ZXFontConfig.swift */; };
-		407D4329437D26044A7B7327ED392534 /* ZXDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FD98387F285F890592898A4497D3F /* ZXDateUtils.swift */; };
-		45642BB52BBFF3FE97D7E6DB601C2B03 /* ZXNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0E131CBAF1EC7EB717311075AA1FF /* ZXNavBarConfig.swift */; };
-		45899A08BBEE825AAA0A69A6471E177F /* ZXConfigValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859D6559FFE2FF94EC3C29E062BA2E5D /* ZXConfigValueProtocol.swift */; };
-		4C0BE36EE14C2BEF4FC42F17E3389336 /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0763D7EB830EF6700629F23C871804 /* ResuableView.swift */; };
-		52E16F35811BE314E8A66F3BD68854FD /* ZXTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BAA1DC8137B0FD14FDB0350F3D018 /* ZXTintColorConfig.swift */; };
-		582A2648E32E03E60A63D3D5AD6195EB /* UIColor+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194034DD44C31A0CCAFB8ED2ABFE3AA /* UIColor+ZX.swift */; };
-		5AD18986E2CA728CA22D73D41806CA7E /* ZXAlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1361348D951CD483335554A4D0CA91 /* ZXAlertUtils.swift */; };
-		64B58BDC870B336843DCECBE6E2CB559 /* ZXAudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4067D9238AFC4AF7F5DED0F6ABF74 /* ZXAudioUtils.swift */; };
-		6FAAFB9BBD07A19A7ACE8758007C8F21 /* UITabbarController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3593D8741E53EE7B1BEC7EC1A7F64265 /* UITabbarController+ZX.swift */; };
-		71E330FB07C8B74D77281A1DEC05B320 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		890A088223AC476B9411FB4A806732E3 /* String+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F7EACE487B8B34DD44DF708A79EE45 /* String+ZX.swift */; };
-		A4D8B364132410D2731FE6A5609198B2 /* Pods-ZXStructs_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */; };
-		A52198018C330C0D5BB0228D647D9137 /* UIDevice+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868A0D40A76F32580A131FC4EE32D342 /* UIDevice+ZX.swift */; };
-		B36F68659A1CE673FB03F2D4320B0DCF /* ZXStructs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DC9DC029107ACE46875EEAE50911A /* ZXStructs-dummy.m */; };
-		B94912017C39DD7545368AE185ACC186 /* UIViewController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6276BFAEB3E11E2CDE594FDF147FBC /* UIViewController+ZX.swift */; };
-		C27F4B147FD4E4210D27E3C98B17435D /* ZXSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 862A5D6EE4D9B020854E1293C7A88B70 /* ZXSettings.bundle */; };
-		C7D3CDD220801856AAD8CEAB60931821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CBFAF43A9F97E03EDB2095FC9BBAA8DB /* Bundle+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3F05EC4919A8E1FF841A7D93114A7 /* Bundle+ZX.swift */; };
-		CFFE63DA77DE27C46A69AD3E2FEDD015 /* NSObject+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEEF5980C31787DEE505B6990B2F1A /* NSObject+ZX.swift */; };
-		DC6C29B7B66604AFDD571041F446F022 /* ZXNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B367DDE894FE675633B1C2AD25761D /* ZXNetwork.swift */; };
-		E1D90BD3054D3B2BD64D027B2AC0C27F /* UIViewController+ZXNavControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6567B18E5F1DE50F918E0EE8FDE8FB6E /* UIViewController+ZXNavControl.swift */; };
-		E9B2ED2A0F7E2EAA3CF59006E1CE282A /* ZXLocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E24E07BC19F394D8402F6C138CBE10 /* ZXLocationUtils.swift */; };
-		F29AEC5680D7E0F6F73A050C943B1F3C /* ZXImagePickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D67EFAEFC93698FCC7EA66BBDEA3B /* ZXImagePickerUtils.swift */; };
+		03BFAD3FBFAF0A1EF46DC8BCEEC24759 /* ZXNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA64543DEC63617A764984BBA228F1 /* ZXNetwork.swift */; };
+		05220898E2B3F1EC57B2158D0832D6B8 /* ZXDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8862329A29E56143080C241315215 /* ZXDateUtils.swift */; };
+		0840A0A4F39CAB23AFFEA44F6E848981 /* HImagePickerUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B19896B2DFC3C1CDC3CD998EFA60 /* HImagePickerUtils-dummy.m */; };
+		08492959EB89C89740C9F164FF679CAE /* ZXConfigValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418B8EECA984ED7413A0F89C7F6DE83 /* ZXConfigValueProtocol.swift */; };
+		1CCEB133F7FAA31E1B8F9ACBCF720F21 /* HImagePickerUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */; };
+		24BD3DAFCE9473F78F1964FDCBE9264C /* ZXNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AF93C8272F652700CD04F5A638B83A /* ZXNavBarConfig.swift */; };
+		2ED9757D7B67966195A8D873180E722D /* UITabbarController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AC62EC53F3FD2F91863E04030A8C2 /* UITabbarController+ZX.swift */; };
+		36705AEAB3D8820C685C8451D45A0C8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */; };
+		3D47260DBF1248B6B98E990216917891 /* ZXAutoScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58552344C2C106FFA1B0079DE1A5964 /* ZXAutoScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E8C419B723574CC88428B20CF2E2EF4 /* ZXAutoScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */; };
+		42508E9E0CD330DC11E09339590FC703 /* ZXAudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5C9291D2BA6AF2570EADD1C0DCCC42 /* ZXAudioUtils.swift */; };
+		4693190233E9BF9F60803118577200F3 /* Pods-ZXStructs_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */; };
+		4E071D7D2FA21BA029D2CA618531E68F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		50970A01ADFA8E8C39D30D89294DF378 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		5337F8B20DBFF0E4C39C0B2AFBD6AD62 /* UIViewController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C65756C6C1BF5505C541F1307B6B0 /* UIViewController+ZX.swift */; };
+		5C3D81D1B9BD79645B1D1D854F4426C9 /* ZXAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */; };
+		5E438CFB1024727F7CC4304A7AF2240A /* ZXStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1CE2A0D6C711A878C11C5340D598B /* ZXStructs.swift */; };
+		60F910F7C4A8902DC984920262588327 /* ZXCommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1F3F389F3A1E18A9BE08E260B58E6 /* ZXCommonUtils.swift */; };
+		6471F4780C18DD67E16C4B423EFFA2AA /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931483669A3112706DFB5AF5A4B38010 /* ResuableView.swift */; };
+		714205B166A588213A998257EDD12DD8 /* Pods-ZXStructs_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1115755F9754C8A87E459C3AAECAAB /* Pods-ZXStructs_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74930D00A754E73365A2497928CC201C /* ZXAutoScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */; };
+		750F47B5095714259691F3A628486FF9 /* ZXStructs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DC9DC029107ACE46875EEAE50911A /* ZXStructs-dummy.m */; };
+		81479A18D08DCDE380B7319D86C01CA8 /* Bundle+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F5CA996AC7D41E24E235376AACC8D /* Bundle+ZX.swift */; };
+		85A07C520243C2CADBD355063DA66D7C /* ZXFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EB11415D149077A9C17B66D0981146 /* ZXFontConfig.swift */; };
+		880FE1EF4F3423DA9F6E321E61F1438A /* ZXStructs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E93BF721605CD2F70799293EDB1BD5F /* ZXStructs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC9BBDC41C76FC78D601B1DDDBD16B2 /* UIFont+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CEE6D40CF6BE8C8BAE1D715FE7DDB /* UIFont+ZX.swift */; };
+		97B4F669BE76BF176793BE6391DA785E /* HImagePickerUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7DAD4B74866D3D663313FF01F088BC /* HImagePickerUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1BC18362FC29D3089DAC056C959BF2 /* NSAttributedString+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37053527608B9DF67749ABDAE32B29C7 /* NSAttributedString+ZX.swift */; };
+		9FC4967EB05038C82058CBDFD6C41D1A /* NSObject+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3586384192E06712C4040AE324C82885 /* NSObject+ZX.swift */; };
+		9FE32523F2C768468F564E5FEE8530D5 /* HImagePickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */; };
+		A7AC82C94BC235E3461EAFB74B0BF3D8 /* UIColor+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930D51C222A2AE411CC2B1919035E38 /* UIColor+ZX.swift */; };
+		B2FD5439EBC2E385541D56E052BB7C4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		B47BB04F65597FADE9EE38E7282A6928 /* String+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA60B736EA6103721C8BA17CF46C8DF /* String+ZX.swift */; };
+		BB394B22CF41194C47E23C9290282BA6 /* ZXTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BB44F5F87DF03A53C667A099D02310 /* ZXTintColorConfig.swift */; };
+		BD38D98CCB2FC8A33BBA76D834C70FB3 /* UIDevice+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AF4BFFDDEBAD9AB4F15B789C85A4D5 /* UIDevice+ZX.swift */; };
+		C262FDC378554507D5E1E94F8D55AF51 /* ZXAlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D2B92DF7A6A7647470D8B9384F86 /* ZXAlertUtils.swift */; };
+		D76F4A244E7086936FBAC816183973E5 /* UIViewController+ZXNavControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E911AE007EA0E204B8261C0D217695 /* UIViewController+ZXNavControl.swift */; };
+		E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		E5B95DCE4FFAADAC40762F1CD2D8F64B /* ZXLocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424CBB833430F3A7877F106B88CD1FB /* ZXLocationUtils.swift */; };
+		F5058E21DB6CD00E71C024F57F88A53D /* ZXTabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205093255898110DFC7EDE3EF73F18D6 /* ZXTabbarConfig.swift */; };
+		F7BE40A2743B26638EAA3EC305DCA836 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */; };
+		F93E3DABD04CF6F13CCDB6120EA99B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */; };
+		FD639915A8FA071B80382DC0F5D21777 /* ZXSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 862A5D6EE4D9B020854E1293C7A88B70 /* ZXSettings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F7AFC161E16812465CA0B06B908C1657 /* PBXContainerItemProxy */ = {
+		1F6B5931414A680A962BB336F687180B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DAF8C777A92BFB2F21876CCE622BB766;
+			remoteGlobalIDString = 5819E3AFE092CA15776A944EF2071F0B;
 			remoteInfo = ZXStructs;
+		};
+		602FB78E0F5BB6209E53A985C7472638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96242768DA54259A94415C12B435715E;
+			remoteInfo = ZXAutoScrollView;
+		};
+		8AC39A604D6A67A3561A03A0E1CEBA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED6D873B958F50E3796405EE10D33A1;
+			remoteInfo = HImagePickerUtils;
+		};
+		BF98B778C20A10FF26B9E2DAD3518563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96242768DA54259A94415C12B435715E;
+			remoteInfo = ZXAutoScrollView;
+		};
+		DAE811E072D79AE2576BEE9C67763278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED6D873B958F50E3796405EE10D33A1;
+			remoteInfo = HImagePickerUtils;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00FCFB29467136F91CC727076408B781 /* ZXStructs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXStructs.framework; path = ZXStructs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0194034DD44C31A0CCAFB8ED2ABFE3AA /* UIColor+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ZX.swift"; sourceTree = "<group>"; };
+		00AF4BFFDDEBAD9AB4F15B789C85A4D5 /* UIDevice+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ZX.swift"; sourceTree = "<group>"; };
 		028199C90D34766D7FD1ABB30C9DE56A /* Pods-ZXStructs_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZXStructs_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0424CBB833430F3A7877F106B88CD1FB /* ZXLocationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXLocationUtils.swift; sourceTree = "<group>"; };
 		04DE6AE374D73D688654EE1A739563ED /* ZXStructs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXStructs.xcconfig; sourceTree = "<group>"; };
-		068D67EFAEFC93698FCC7EA66BBDEA3B /* ZXImagePickerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXImagePickerUtils.swift; sourceTree = "<group>"; };
-		0A1361348D951CD483335554A4D0CA91 /* ZXAlertUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAlertUtils.swift; sourceTree = "<group>"; };
-		0A858EDDC5B30078D21F3B9F32C3B4CC /* NSAttributedString+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ZX.swift"; sourceTree = "<group>"; };
-		1EB0CF1144BE988F7AF1EA75AE614060 /* ZXCommonUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXCommonUtils.swift; sourceTree = "<group>"; };
-		31E24E07BC19F394D8402F6C138CBE10 /* ZXLocationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXLocationUtils.swift; sourceTree = "<group>"; };
-		32872793600DE6A61329FB755E65CDBD /* ZXStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXStructs.swift; sourceTree = "<group>"; };
-		3593D8741E53EE7B1BEC7EC1A7F64265 /* UITabbarController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabbarController+ZX.swift"; sourceTree = "<group>"; };
+		076AC62EC53F3FD2F91863E04030A8C2 /* UITabbarController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabbarController+ZX.swift"; sourceTree = "<group>"; };
+		0A7DAD4B74866D3D663313FF01F088BC /* HImagePickerUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HImagePickerUtils-umbrella.h"; sourceTree = "<group>"; };
+		0DAF7CBC5FEB3FE616D3C87375D04A87 /* HImagePickerUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HImagePickerUtils-prefix.pch"; sourceTree = "<group>"; };
+		10EB11415D149077A9C17B66D0981146 /* ZXFontConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXFontConfig.swift; sourceTree = "<group>"; };
+		11800BBFB70867B7AFF3E84BF434092F /* HImagePickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HImagePickerUtils.framework; path = HImagePickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		205093255898110DFC7EDE3EF73F18D6 /* ZXTabbarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTabbarConfig.swift; sourceTree = "<group>"; };
+		20D49D41358E082DBADE2756796A4D14 /* ZXAutoScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-prefix.pch"; sourceTree = "<group>"; };
+		20E911AE007EA0E204B8261C0D217695 /* UIViewController+ZXNavControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZXNavControl.swift"; sourceTree = "<group>"; };
+		330D18CBED6A3300477C4A7050569C0E /* ZXAutoScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXAutoScrollView.xcconfig; sourceTree = "<group>"; };
+		3586384192E06712C4040AE324C82885 /* NSObject+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ZX.swift"; sourceTree = "<group>"; };
+		37053527608B9DF67749ABDAE32B29C7 /* NSAttributedString+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ZX.swift"; sourceTree = "<group>"; };
 		38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXStructs_Example-dummy.m"; sourceTree = "<group>"; };
+		3AA60B736EA6103721C8BA17CF46C8DF /* String+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ZX.swift"; sourceTree = "<group>"; };
+		3C5C9291D2BA6AF2570EADD1C0DCCC42 /* ZXAudioUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAudioUtils.swift; sourceTree = "<group>"; };
 		3E93BF721605CD2F70799293EDB1BD5F /* ZXStructs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXStructs-umbrella.h"; sourceTree = "<group>"; };
 		4505DF5C94105ACFAF2EE46A6C2601F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46B367DDE894FE675633B1C2AD25761D /* ZXNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNetwork.swift; sourceTree = "<group>"; };
-		4885263E42FB4B7822CF8B320EF92954 /* UIFont+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZX.swift"; sourceTree = "<group>"; };
-		4D6276BFAEB3E11E2CDE594FDF147FBC /* UIViewController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZX.swift"; sourceTree = "<group>"; };
+		452CEE6D40CF6BE8C8BAE1D715FE7DDB /* UIFont+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZX.swift"; sourceTree = "<group>"; };
+		4E7C65756C6C1BF5505C541F1307B6B0 /* UIViewController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZX.swift"; sourceTree = "<group>"; };
+		57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZXAutoScrollView.swift; path = ZXAutoScrollView/Classes/ZXAutoScrollView.swift; sourceTree = "<group>"; };
+		589762A9EFA31D6EF2E253D3C4B67237 /* HImagePickerUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HImagePickerUtils.xcconfig; sourceTree = "<group>"; };
+		602F5CA996AC7D41E24E235376AACC8D /* Bundle+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+ZX.swift"; sourceTree = "<group>"; };
+		619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXAutoScrollView-dummy.m"; sourceTree = "<group>"; };
 		63CA95ABA6EFF80948AB5899E0E96256 /* Pods-ZXStructs_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZXStructs_Example.modulemap"; sourceTree = "<group>"; };
-		6567B18E5F1DE50F918E0EE8FDE8FB6E /* UIViewController+ZXNavControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZXNavControl.swift"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67D0E131CBAF1EC7EB717311075AA1FF /* ZXNavBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNavBarConfig.swift; sourceTree = "<group>"; };
 		7278E61EECC53E43AF55DEE5D931E23F /* ZXStructs-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXStructs-prefix.pch"; sourceTree = "<group>"; };
 		74DCBE1750B0E7C05185454191508208 /* Pods-ZXStructs_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7C1115755F9754C8A87E459C3AAECAAB /* Pods-ZXStructs_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZXStructs_Example-umbrella.h"; sourceTree = "<group>"; };
 		83D80D8F65AE214166CBDB104C5BFCE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859D6559FFE2FF94EC3C29E062BA2E5D /* ZXConfigValueProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXConfigValueProtocol.swift; sourceTree = "<group>"; };
+		8418B8EECA984ED7413A0F89C7F6DE83 /* ZXConfigValueProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXConfigValueProtocol.swift; sourceTree = "<group>"; };
+		84D8D2B92DF7A6A7647470D8B9384F86 /* ZXAlertUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAlertUtils.swift; sourceTree = "<group>"; };
 		862A5D6EE4D9B020854E1293C7A88B70 /* ZXSettings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = ZXSettings.bundle; sourceTree = "<group>"; };
-		868A0D40A76F32580A131FC4EE32D342 /* UIDevice+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ZX.swift"; sourceTree = "<group>"; };
-		88E3F05EC4919A8E1FF841A7D93114A7 /* Bundle+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+ZX.swift"; sourceTree = "<group>"; };
-		91F4067D9238AFC4AF7F5DED0F6ABF74 /* ZXAudioUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAudioUtils.swift; sourceTree = "<group>"; };
+		8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		931483669A3112706DFB5AF5A4B38010 /* ResuableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
+		9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HImagePickerUtils.swift; path = HImagePickerUtils/Classes/HImagePickerUtils.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9AF5E5A2427BCEC797274E8D23DDCBEA /* ZXAutoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAutoScrollView.swift; sourceTree = "<group>"; };
-		A42BAA1DC8137B0FD14FDB0350F3D018 /* ZXTintColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTintColorConfig.swift; sourceTree = "<group>"; };
-		AC0763D7EB830EF6700629F23C871804 /* ResuableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
-		AF3FD98387F285F890592898A4497D3F /* ZXDateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXDateUtils.swift; sourceTree = "<group>"; };
+		96EA64543DEC63617A764984BBA228F1 /* ZXNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNetwork.swift; sourceTree = "<group>"; };
+		A1C1CE2A0D6C711A878C11C5340D598B /* ZXStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXStructs.swift; sourceTree = "<group>"; };
+		A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXAutoScrollView.framework; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		AFB6B27F6FA7F19EBD77EFAD9C215004 /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
+		B1BB44F5F87DF03A53C667A099D02310 /* ZXTintColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTintColorConfig.swift; sourceTree = "<group>"; };
 		B32FDCC16AA5F2FF882D907A413B3C48 /* Pods-ZXStructs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXStructs_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BDF361D5C4920302EB808E2629C89440 /* ZXTabbarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTabbarConfig.swift; sourceTree = "<group>"; };
-		C0F7EACE487B8B34DD44DF708A79EE45 /* String+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ZX.swift"; sourceTree = "<group>"; };
+		B58552344C2C106FFA1B0079DE1A5964 /* ZXAutoScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-umbrella.h"; sourceTree = "<group>"; };
+		B67458F960B439F7D12E7431F351A38D /* Pods_ZXStructs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXStructs_Example.framework; path = "Pods-ZXStructs_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68E50EF051A6D2C27A61B8ECE4051C9 /* HImagePickerUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HImagePickerUtils.modulemap; sourceTree = "<group>"; };
+		B9515DDFB0DCCD6903BD6892F0211473 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C4C50F54C89099A8EF2F1A4A20F4ECEB /* Pods-ZXStructs_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXStructs_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5F7B19896B2DFC3C1CDC3CD998EFA60 /* HImagePickerUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HImagePickerUtils-dummy.m"; sourceTree = "<group>"; };
 		CD0B80AE9E092FFFA03827EB047D6579 /* ZXStructs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXStructs.modulemap; sourceTree = "<group>"; };
-		CE43A8FE4C517512544D30A2362F9B6C /* ZXFontConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXFontConfig.swift; sourceTree = "<group>"; };
 		D20DC9DC029107ACE46875EEAE50911A /* ZXStructs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXStructs-dummy.m"; sourceTree = "<group>"; };
+		D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HImagePickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D930D51C222A2AE411CC2B1919035E38 /* UIColor+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ZX.swift"; sourceTree = "<group>"; };
+		D977F52D3B7C5978AFAEBC866F4BBFA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA336DB4D271719FF6FADC366FB0858 /* Pods-ZXStructs_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-resources.sh"; sourceTree = "<group>"; };
-		E7B38F6369E7C72531BB611DC03F5A5A /* Pods_ZXStructs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXStructs_Example.framework; path = "Pods-ZXStructs_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B1F3F389F3A1E18A9BE08E260B58E6 /* ZXCommonUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXCommonUtils.swift; sourceTree = "<group>"; };
+		E9AF93C8272F652700CD04F5A638B83A /* ZXNavBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNavBarConfig.swift; sourceTree = "<group>"; };
+		EFEEDD58195FDE0CDA488F753E5A4167 /* ZXStructs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXStructs.framework; path = ZXStructs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E69409A03E149BCBB7F43D0C447116 /* Pods-ZXStructs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXStructs_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FDEEEF5980C31787DEE505B6990B2F1A /* NSObject+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ZX.swift"; sourceTree = "<group>"; };
+		F7D8862329A29E56143080C241315215 /* ZXDateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXDateUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		51050A46F84C7125683907B806FFCBBB /* Frameworks */ = {
+		5250CF5F27C66A00BFF36EDA09632342 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D3CDD220801856AAD8CEAB60931821 /* Foundation.framework in Frameworks */,
+				50970A01ADFA8E8C39D30D89294DF378 /* Foundation.framework in Frameworks */,
+				1CCEB133F7FAA31E1B8F9ACBCF720F21 /* HImagePickerUtils.framework in Frameworks */,
+				3E8C419B723574CC88428B20CF2E2EF4 /* ZXAutoScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2F30559BFFC2EB84158B9A938B86D93 /* Frameworks */ = {
+		5E450518704BCC88492274EC19C62A79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E330FB07C8B74D77281A1DEC05B320 /* Foundation.framework in Frameworks */,
+				B2FD5439EBC2E385541D56E052BB7C4D /* Foundation.framework in Frameworks */,
+				36705AEAB3D8820C685C8451D45A0C8A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEAEF28DA32F8F34B8277AE5053DB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */,
+				F7BE40A2743B26638EAA3EC305DCA836 /* Photos.framework in Frameworks */,
+				F93E3DABD04CF6F13CCDB6120EA99B14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF39AA4E4A471BEFFFE0D261F89FBC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E071D7D2FA21BA029D2CA618531E68F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03BB00256884B0E4414CAAD4E118501E /* ZXConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8418B8EECA984ED7413A0F89C7F6DE83 /* ZXConfigValueProtocol.swift */,
+				10EB11415D149077A9C17B66D0981146 /* ZXFontConfig.swift */,
+				E9AF93C8272F652700CD04F5A638B83A /* ZXNavBarConfig.swift */,
+				205093255898110DFC7EDE3EF73F18D6 /* ZXTabbarConfig.swift */,
+				B1BB44F5F87DF03A53C667A099D02310 /* ZXTintColorConfig.swift */,
+			);
+			name = ZXConfig;
+			path = ZXConfig;
+			sourceTree = "<group>";
+		};
 		0791314A3C7DDD96227B6A2856B89F1F /* Pods-ZXStructs_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,13 +243,70 @@
 			path = "Example/Pods/Target Support Files/ZXStructs";
 			sourceTree = "<group>";
 		};
-		3551FC5F498D319FFE9C0BA618C8F129 /* ZXStructs */ = {
+		235AFC0FE4366AEBFB94BAB0E9AA9F31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				885645104ABEB5E0B11463B0ABEE29EC /* Classes */,
+				11800BBFB70867B7AFF3E84BF434092F /* HImagePickerUtils.framework */,
+				B67458F960B439F7D12E7431F351A38D /* Pods_ZXStructs_Example.framework */,
+				A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */,
+				EFEEDD58195FDE0CDA488F753E5A4167 /* ZXStructs.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36415FE1197D92D6B60FC0B4BDE3E612 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F168A36B9D0921B708BD06051C98 /* HImagePickerUtils */,
+				B7705C3FD98ABBDC48D5E59682889172 /* ZXAutoScrollView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		377B984B70E03E8E10BAC0B12DB121A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */,
+				C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */,
+				72065A95F8746A11BD10EFF2D1B8FFAD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37B7C2D05259C47F7B2D122A6309201A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B68E50EF051A6D2C27A61B8ECE4051C9 /* HImagePickerUtils.modulemap */,
+				589762A9EFA31D6EF2E253D3C4B67237 /* HImagePickerUtils.xcconfig */,
+				C5F7B19896B2DFC3C1CDC3CD998EFA60 /* HImagePickerUtils-dummy.m */,
+				0DAF7CBC5FEB3FE616D3C87375D04A87 /* HImagePickerUtils-prefix.pch */,
+				0A7DAD4B74866D3D663313FF01F088BC /* HImagePickerUtils-umbrella.h */,
+				D977F52D3B7C5978AFAEBC866F4BBFA9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HImagePickerUtils";
+			sourceTree = "<group>";
+		};
+		37E7E4ACD92003BBB42723EFE552CEF3 /* ZXStructs */ = {
+			isa = PBXGroup;
+			children = (
+				4A3FD4CB692BACCAF36AF31DEA3437C9 /* Classes */,
 			);
 			name = ZXStructs;
 			path = ZXStructs;
+			sourceTree = "<group>";
+		};
+		39926E4875920CF277B254841AAE4B4C /* ZXUtilityTools */ = {
+			isa = PBXGroup;
+			children = (
+				84D8D2B92DF7A6A7647470D8B9384F86 /* ZXAlertUtils.swift */,
+				3C5C9291D2BA6AF2570EADD1C0DCCC42 /* ZXAudioUtils.swift */,
+				E4B1F3F389F3A1E18A9BE08E260B58E6 /* ZXCommonUtils.swift */,
+				F7D8862329A29E56143080C241315215 /* ZXDateUtils.swift */,
+				0424CBB833430F3A7877F106B88CD1FB /* ZXLocationUtils.swift */,
+			);
+			name = ZXUtilityTools;
+			path = ZXUtilityTools;
 			sourceTree = "<group>";
 		};
 		45B2DAFF24908765CF423D87563C6654 /* Resources */ = {
@@ -169,19 +317,42 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		62D12C29046590233F84113783B4AF6B /* Products */ = {
+		4811305D94B2D4B40654ABA8A54216DA /* ZXExtension */ = {
 			isa = PBXGroup;
 			children = (
-				E7B38F6369E7C72531BB611DC03F5A5A /* Pods_ZXStructs_Example.framework */,
-				00FCFB29467136F91CC727076408B781 /* ZXStructs.framework */,
+				602F5CA996AC7D41E24E235376AACC8D /* Bundle+ZX.swift */,
+				37053527608B9DF67749ABDAE32B29C7 /* NSAttributedString+ZX.swift */,
+				3586384192E06712C4040AE324C82885 /* NSObject+ZX.swift */,
+				931483669A3112706DFB5AF5A4B38010 /* ResuableView.swift */,
+				3AA60B736EA6103721C8BA17CF46C8DF /* String+ZX.swift */,
+				D930D51C222A2AE411CC2B1919035E38 /* UIColor+ZX.swift */,
+				00AF4BFFDDEBAD9AB4F15B789C85A4D5 /* UIDevice+ZX.swift */,
+				452CEE6D40CF6BE8C8BAE1D715FE7DDB /* UIFont+ZX.swift */,
+				076AC62EC53F3FD2F91863E04030A8C2 /* UITabbarController+ZX.swift */,
+				4E7C65756C6C1BF5505C541F1307B6B0 /* UIViewController+ZX.swift */,
+				20E911AE007EA0E204B8261C0D217695 /* UIViewController+ZXNavControl.swift */,
 			);
-			name = Products;
+			name = ZXExtension;
+			path = ZXExtension;
 			sourceTree = "<group>";
 		};
-		62DA6791A2DB445F609313F29B7D633E /* ZXNetwork */ = {
+		4A3FD4CB692BACCAF36AF31DEA3437C9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46B367DDE894FE675633B1C2AD25761D /* ZXNetwork.swift */,
+				A1C1CE2A0D6C711A878C11C5340D598B /* ZXStructs.swift */,
+				03BB00256884B0E4414CAAD4E118501E /* ZXConfig */,
+				4811305D94B2D4B40654ABA8A54216DA /* ZXExtension */,
+				5A798B30ADE7965CEB8444E8C947C336 /* ZXNetwork */,
+				39926E4875920CF277B254841AAE4B4C /* ZXUtilityTools */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5A798B30ADE7965CEB8444E8C947C336 /* ZXNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				96EA64543DEC63617A764984BBA228F1 /* ZXNetwork.swift */,
 			);
 			name = ZXNetwork;
 			path = ZXNetwork;
@@ -195,19 +366,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		67E8AC24877CF84F69D60F835D26B094 /* ZXConfig */ = {
-			isa = PBXGroup;
-			children = (
-				859D6559FFE2FF94EC3C29E062BA2E5D /* ZXConfigValueProtocol.swift */,
-				CE43A8FE4C517512544D30A2362F9B6C /* ZXFontConfig.swift */,
-				67D0E131CBAF1EC7EB717311075AA1FF /* ZXNavBarConfig.swift */,
-				BDF361D5C4920302EB808E2629C89440 /* ZXTabbarConfig.swift */,
-				A42BAA1DC8137B0FD14FDB0350F3D018 /* ZXTintColorConfig.swift */,
-			);
-			name = ZXConfig;
-			path = ZXConfig;
-			sourceTree = "<group>";
-		};
 		6EDC872257AAE3B24DA23E671E80F39D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,23 +374,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		734FE8C6C1D4B90B6D8B43A413A444BB /* ZXExtension */ = {
+		72065A95F8746A11BD10EFF2D1B8FFAD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				88E3F05EC4919A8E1FF841A7D93114A7 /* Bundle+ZX.swift */,
-				0A858EDDC5B30078D21F3B9F32C3B4CC /* NSAttributedString+ZX.swift */,
-				FDEEEF5980C31787DEE505B6990B2F1A /* NSObject+ZX.swift */,
-				AC0763D7EB830EF6700629F23C871804 /* ResuableView.swift */,
-				C0F7EACE487B8B34DD44DF708A79EE45 /* String+ZX.swift */,
-				0194034DD44C31A0CCAFB8ED2ABFE3AA /* UIColor+ZX.swift */,
-				868A0D40A76F32580A131FC4EE32D342 /* UIDevice+ZX.swift */,
-				4885263E42FB4B7822CF8B320EF92954 /* UIFont+ZX.swift */,
-				3593D8741E53EE7B1BEC7EC1A7F64265 /* UITabbarController+ZX.swift */,
-				4D6276BFAEB3E11E2CDE594FDF147FBC /* UIViewController+ZX.swift */,
-				6567B18E5F1DE50F918E0EE8FDE8FB6E /* UIViewController+ZXNavControl.swift */,
+				C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */,
+				AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */,
+				8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */,
 			);
-			name = ZXExtension;
-			path = ZXExtension;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		79EE1E863219956F489E36315BFF4D8B /* ZXStructs */ = {
@@ -249,45 +398,31 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				67CB0E7106DE685A2B63D498D93CCE86 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				62D12C29046590233F84113783B4AF6B /* Products */,
+				377B984B70E03E8E10BAC0B12DB121A6 /* Frameworks */,
+				36415FE1197D92D6B60FC0B4BDE3E612 /* Pods */,
+				235AFC0FE4366AEBFB94BAB0E9AA9F31 /* Products */,
 				6EDC872257AAE3B24DA23E671E80F39D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		885645104ABEB5E0B11463B0ABEE29EC /* Classes */ = {
+		7F35F168A36B9D0921B708BD06051C98 /* HImagePickerUtils */ = {
 			isa = PBXGroup;
 			children = (
-				32872793600DE6A61329FB755E65CDBD /* ZXStructs.swift */,
-				F4E7B8AAED371795B0AE29731A05BD2A /* ZXCommonUI */,
-				67E8AC24877CF84F69D60F835D26B094 /* ZXConfig */,
-				734FE8C6C1D4B90B6D8B43A413A444BB /* ZXExtension */,
-				62DA6791A2DB445F609313F29B7D633E /* ZXNetwork */,
-				B181DDD2C7BF6CB2D153488E4BB11A16 /* ZXUtilityTools */,
+				9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */,
+				37B7C2D05259C47F7B2D122A6309201A /* Support Files */,
 			);
-			name = Classes;
-			path = Classes;
+			name = HImagePickerUtils;
+			path = HImagePickerUtils;
 			sourceTree = "<group>";
 		};
-		B181DDD2C7BF6CB2D153488E4BB11A16 /* ZXUtilityTools */ = {
+		B7705C3FD98ABBDC48D5E59682889172 /* ZXAutoScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				0A1361348D951CD483335554A4D0CA91 /* ZXAlertUtils.swift */,
-				91F4067D9238AFC4AF7F5DED0F6ABF74 /* ZXAudioUtils.swift */,
-				1EB0CF1144BE988F7AF1EA75AE614060 /* ZXCommonUtils.swift */,
-				AF3FD98387F285F890592898A4497D3F /* ZXDateUtils.swift */,
-				31E24E07BC19F394D8402F6C138CBE10 /* ZXLocationUtils.swift */,
+				57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */,
+				C88E61552FF65EF68C45EF79AA4F151D /* Support Files */,
 			);
-			name = ZXUtilityTools;
-			path = ZXUtilityTools;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
+			name = ZXAutoScrollView;
+			path = ZXAutoScrollView;
 			sourceTree = "<group>";
 		};
 		C00C890D37571A6F9C549104F086363A /* ZXStructs */ = {
@@ -295,86 +430,136 @@
 			children = (
 				45B2DAFF24908765CF423D87563C6654 /* Resources */,
 				0924917FBF1135395D686DFE1E6D5CA1 /* Support Files */,
-				3551FC5F498D319FFE9C0BA618C8F129 /* ZXStructs */,
+				37E7E4ACD92003BBB42723EFE552CEF3 /* ZXStructs */,
 			);
 			name = ZXStructs;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		C88E61552FF65EF68C45EF79AA4F151D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				B9515DDFB0DCCD6903BD6892F0211473 /* Info.plist */,
+				AFB6B27F6FA7F19EBD77EFAD9C215004 /* ZXAutoScrollView.modulemap */,
+				330D18CBED6A3300477C4A7050569C0E /* ZXAutoScrollView.xcconfig */,
+				619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */,
+				20D49D41358E082DBADE2756796A4D14 /* ZXAutoScrollView-prefix.pch */,
+				B58552344C2C106FFA1B0079DE1A5964 /* ZXAutoScrollView-umbrella.h */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		F4E7B8AAED371795B0AE29731A05BD2A /* ZXCommonUI */ = {
-			isa = PBXGroup;
-			children = (
-				9AF5E5A2427BCEC797274E8D23DDCBEA /* ZXAutoScrollView.swift */,
-				068D67EFAEFC93698FCC7EA66BBDEA3B /* ZXImagePickerUtils.swift */,
-			);
-			name = ZXCommonUI;
-			path = ZXCommonUI;
+			name = "Support Files";
+			path = "../Target Support Files/ZXAutoScrollView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C4654BFF96FDC834D6E2F6099CB19AC /* Headers */ = {
+		3C5E2D978249884D9D0FF32783BA9A3F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BA5A616442D4BAEAC1E6D9F0810610 /* Pods-ZXStructs_Example-umbrella.h in Headers */,
+				97B4F669BE76BF176793BE6391DA785E /* HImagePickerUtils-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46344B954C486AE556757EF84CA517AA /* Headers */ = {
+		40B8E3DA77BC81AC8E99914882CDB7BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BCB945B06DBF5E889C45B8CBB28FA0 /* ZXStructs-umbrella.h in Headers */,
+				714205B166A588213A998257EDD12DD8 /* Pods-ZXStructs_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C933F57320E1D87F6C5AC1FF26A3B2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880FE1EF4F3423DA9F6E321E61F1438A /* ZXStructs-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF982394C493F4EDF3C8A06BDB23B75D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D47260DBF1248B6B98E990216917891 /* ZXAutoScrollView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E60279C6A1D145943DBE60621EA8F9B /* Pods-ZXStructs_Example */ = {
+		0ED6D873B958F50E3796405EE10D33A1 /* HImagePickerUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E77E9F4E8D29C6C643C808703F9DC751 /* Build configuration list for PBXNativeTarget "Pods-ZXStructs_Example" */;
+			buildConfigurationList = 5C282ADD2BB255B0A63AEF8C0A08B604 /* Build configuration list for PBXNativeTarget "HImagePickerUtils" */;
 			buildPhases = (
-				C95EEE4F159866E20ACDC3C44B644ACE /* Sources */,
-				A2F30559BFFC2EB84158B9A938B86D93 /* Frameworks */,
-				0C4654BFF96FDC834D6E2F6099CB19AC /* Headers */,
+				861292CF650B92DE8B2F38CCFB401860 /* Sources */,
+				ADEAEF28DA32F8F34B8277AE5053DB79 /* Frameworks */,
+				3C5E2D978249884D9D0FF32783BA9A3F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B7D10A84BC08EDF3B371D1E4BF7CD596 /* PBXTargetDependency */,
 			);
-			name = "Pods-ZXStructs_Example";
-			productName = "Pods-ZXStructs_Example";
-			productReference = E7B38F6369E7C72531BB611DC03F5A5A /* Pods_ZXStructs_Example.framework */;
+			name = HImagePickerUtils;
+			productName = HImagePickerUtils;
+			productReference = 11800BBFB70867B7AFF3E84BF434092F /* HImagePickerUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DAF8C777A92BFB2F21876CCE622BB766 /* ZXStructs */ = {
+		5819E3AFE092CA15776A944EF2071F0B /* ZXStructs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21C1512D045CE2C13E89D6A74589B60A /* Build configuration list for PBXNativeTarget "ZXStructs" */;
+			buildConfigurationList = 6D8653CAE7DFB70BC4A6B5039B7E3817 /* Build configuration list for PBXNativeTarget "ZXStructs" */;
 			buildPhases = (
-				B87135A749EE0C3C608864C5ACA2047F /* Sources */,
-				51050A46F84C7125683907B806FFCBBB /* Frameworks */,
-				A28D29B1BEF12192DF12C0E5F92A8B06 /* Resources */,
-				46344B954C486AE556757EF84CA517AA /* Headers */,
+				4803188C11358FD307D97D68D70B3DFF /* Sources */,
+				5250CF5F27C66A00BFF36EDA09632342 /* Frameworks */,
+				7F2A1CAD87A9B79045F294C5172AD78D /* Resources */,
+				4C933F57320E1D87F6C5AC1FF26A3B2C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E90AE72287BE6C1D7128D122E704CD5 /* PBXTargetDependency */,
+				6CEC1F3B7A3D66DFC039D472976CB054 /* PBXTargetDependency */,
 			);
 			name = ZXStructs;
 			productName = ZXStructs;
-			productReference = 00FCFB29467136F91CC727076408B781 /* ZXStructs.framework */;
+			productReference = EFEEDD58195FDE0CDA488F753E5A4167 /* ZXStructs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96242768DA54259A94415C12B435715E /* ZXAutoScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4CFE1C91D21B9535128403F8A87AEC /* Build configuration list for PBXNativeTarget "ZXAutoScrollView" */;
+			buildPhases = (
+				72DECF1E3B1FD4DFB977BF9EB023C0D6 /* Sources */,
+				5E450518704BCC88492274EC19C62A79 /* Frameworks */,
+				EF982394C493F4EDF3C8A06BDB23B75D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXAutoScrollView;
+			productName = ZXAutoScrollView;
+			productReference = A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EF73693E33DCCAA2AB6417B72ABF1D5 /* Pods-ZXStructs_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED726069812C516F82D00B85552B37C6 /* Build configuration list for PBXNativeTarget "Pods-ZXStructs_Example" */;
+			buildPhases = (
+				1B9FD30A984C9D33B62057D56AFB4E0B /* Sources */,
+				FF39AA4E4A471BEFFFE0D261F89FBC69 /* Frameworks */,
+				40B8E3DA77BC81AC8E99914882CDB7BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0132D54B678CF7E232D9134B28D09CC /* PBXTargetDependency */,
+				008ECBD3242466CAB69C784433EA2A72 /* PBXTargetDependency */,
+				2C5F3BA80EBD9BFBB99BF12D51469764 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZXStructs_Example";
+			productName = "Pods-ZXStructs_Example";
+			productReference = B67458F960B439F7D12E7431F351A38D /* Pods_ZXStructs_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -394,84 +579,161 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 62D12C29046590233F84113783B4AF6B /* Products */;
+			productRefGroup = 235AFC0FE4366AEBFB94BAB0E9AA9F31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E60279C6A1D145943DBE60621EA8F9B /* Pods-ZXStructs_Example */,
-				DAF8C777A92BFB2F21876CCE622BB766 /* ZXStructs */,
+				0ED6D873B958F50E3796405EE10D33A1 /* HImagePickerUtils */,
+				9EF73693E33DCCAA2AB6417B72ABF1D5 /* Pods-ZXStructs_Example */,
+				96242768DA54259A94415C12B435715E /* ZXAutoScrollView */,
+				5819E3AFE092CA15776A944EF2071F0B /* ZXStructs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A28D29B1BEF12192DF12C0E5F92A8B06 /* Resources */ = {
+		7F2A1CAD87A9B79045F294C5172AD78D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27F4B147FD4E4210D27E3C98B17435D /* ZXSettings.bundle in Resources */,
+				FD639915A8FA071B80382DC0F5D21777 /* ZXSettings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B87135A749EE0C3C608864C5ACA2047F /* Sources */ = {
+		1B9FD30A984C9D33B62057D56AFB4E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBFAF43A9F97E03EDB2095FC9BBAA8DB /* Bundle+ZX.swift in Sources */,
-				082DDCE9D82A3FF76B49B29C9F14555B /* NSAttributedString+ZX.swift in Sources */,
-				CFFE63DA77DE27C46A69AD3E2FEDD015 /* NSObject+ZX.swift in Sources */,
-				4C0BE36EE14C2BEF4FC42F17E3389336 /* ResuableView.swift in Sources */,
-				890A088223AC476B9411FB4A806732E3 /* String+ZX.swift in Sources */,
-				582A2648E32E03E60A63D3D5AD6195EB /* UIColor+ZX.swift in Sources */,
-				A52198018C330C0D5BB0228D647D9137 /* UIDevice+ZX.swift in Sources */,
-				32914CB0506066360249C6FB926D6D7E /* UIFont+ZX.swift in Sources */,
-				6FAAFB9BBD07A19A7ACE8758007C8F21 /* UITabbarController+ZX.swift in Sources */,
-				B94912017C39DD7545368AE185ACC186 /* UIViewController+ZX.swift in Sources */,
-				E1D90BD3054D3B2BD64D027B2AC0C27F /* UIViewController+ZXNavControl.swift in Sources */,
-				5AD18986E2CA728CA22D73D41806CA7E /* ZXAlertUtils.swift in Sources */,
-				64B58BDC870B336843DCECBE6E2CB559 /* ZXAudioUtils.swift in Sources */,
-				2465672990548B302F7E18647E26973D /* ZXAutoScrollView.swift in Sources */,
-				333C921E5E287DB67C78120E60D832D9 /* ZXCommonUtils.swift in Sources */,
-				45899A08BBEE825AAA0A69A6471E177F /* ZXConfigValueProtocol.swift in Sources */,
-				407D4329437D26044A7B7327ED392534 /* ZXDateUtils.swift in Sources */,
-				360FECBFD2768D2688F8927CF34C8B78 /* ZXFontConfig.swift in Sources */,
-				F29AEC5680D7E0F6F73A050C943B1F3C /* ZXImagePickerUtils.swift in Sources */,
-				E9B2ED2A0F7E2EAA3CF59006E1CE282A /* ZXLocationUtils.swift in Sources */,
-				45642BB52BBFF3FE97D7E6DB601C2B03 /* ZXNavBarConfig.swift in Sources */,
-				DC6C29B7B66604AFDD571041F446F022 /* ZXNetwork.swift in Sources */,
-				B36F68659A1CE673FB03F2D4320B0DCF /* ZXStructs-dummy.m in Sources */,
-				343BDD9CA74CE3B1D9FAA855556D4AD4 /* ZXStructs.swift in Sources */,
-				0990472C36BB39F439A55C95C9216494 /* ZXTabbarConfig.swift in Sources */,
-				52E16F35811BE314E8A66F3BD68854FD /* ZXTintColorConfig.swift in Sources */,
+				4693190233E9BF9F60803118577200F3 /* Pods-ZXStructs_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C95EEE4F159866E20ACDC3C44B644ACE /* Sources */ = {
+		4803188C11358FD307D97D68D70B3DFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D8B364132410D2731FE6A5609198B2 /* Pods-ZXStructs_Example-dummy.m in Sources */,
+				81479A18D08DCDE380B7319D86C01CA8 /* Bundle+ZX.swift in Sources */,
+				9F1BC18362FC29D3089DAC056C959BF2 /* NSAttributedString+ZX.swift in Sources */,
+				9FC4967EB05038C82058CBDFD6C41D1A /* NSObject+ZX.swift in Sources */,
+				6471F4780C18DD67E16C4B423EFFA2AA /* ResuableView.swift in Sources */,
+				B47BB04F65597FADE9EE38E7282A6928 /* String+ZX.swift in Sources */,
+				A7AC82C94BC235E3461EAFB74B0BF3D8 /* UIColor+ZX.swift in Sources */,
+				BD38D98CCB2FC8A33BBA76D834C70FB3 /* UIDevice+ZX.swift in Sources */,
+				8DC9BBDC41C76FC78D601B1DDDBD16B2 /* UIFont+ZX.swift in Sources */,
+				2ED9757D7B67966195A8D873180E722D /* UITabbarController+ZX.swift in Sources */,
+				5337F8B20DBFF0E4C39C0B2AFBD6AD62 /* UIViewController+ZX.swift in Sources */,
+				D76F4A244E7086936FBAC816183973E5 /* UIViewController+ZXNavControl.swift in Sources */,
+				C262FDC378554507D5E1E94F8D55AF51 /* ZXAlertUtils.swift in Sources */,
+				42508E9E0CD330DC11E09339590FC703 /* ZXAudioUtils.swift in Sources */,
+				60F910F7C4A8902DC984920262588327 /* ZXCommonUtils.swift in Sources */,
+				08492959EB89C89740C9F164FF679CAE /* ZXConfigValueProtocol.swift in Sources */,
+				05220898E2B3F1EC57B2158D0832D6B8 /* ZXDateUtils.swift in Sources */,
+				85A07C520243C2CADBD355063DA66D7C /* ZXFontConfig.swift in Sources */,
+				E5B95DCE4FFAADAC40762F1CD2D8F64B /* ZXLocationUtils.swift in Sources */,
+				24BD3DAFCE9473F78F1964FDCBE9264C /* ZXNavBarConfig.swift in Sources */,
+				03BFAD3FBFAF0A1EF46DC8BCEEC24759 /* ZXNetwork.swift in Sources */,
+				750F47B5095714259691F3A628486FF9 /* ZXStructs-dummy.m in Sources */,
+				5E438CFB1024727F7CC4304A7AF2240A /* ZXStructs.swift in Sources */,
+				F5058E21DB6CD00E71C024F57F88A53D /* ZXTabbarConfig.swift in Sources */,
+				BB394B22CF41194C47E23C9290282BA6 /* ZXTintColorConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DECF1E3B1FD4DFB977BF9EB023C0D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74930D00A754E73365A2497928CC201C /* ZXAutoScrollView-dummy.m in Sources */,
+				5C3D81D1B9BD79645B1D1D854F4426C9 /* ZXAutoScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861292CF650B92DE8B2F38CCFB401860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0840A0A4F39CAB23AFFEA44F6E848981 /* HImagePickerUtils-dummy.m in Sources */,
+				9FE32523F2C768468F564E5FEE8530D5 /* HImagePickerUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7D10A84BC08EDF3B371D1E4BF7CD596 /* PBXTargetDependency */ = {
+		008ECBD3242466CAB69C784433EA2A72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXAutoScrollView;
+			target = 96242768DA54259A94415C12B435715E /* ZXAutoScrollView */;
+			targetProxy = BF98B778C20A10FF26B9E2DAD3518563 /* PBXContainerItemProxy */;
+		};
+		2C5F3BA80EBD9BFBB99BF12D51469764 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZXStructs;
-			target = DAF8C777A92BFB2F21876CCE622BB766 /* ZXStructs */;
-			targetProxy = F7AFC161E16812465CA0B06B908C1657 /* PBXContainerItemProxy */;
+			target = 5819E3AFE092CA15776A944EF2071F0B /* ZXStructs */;
+			targetProxy = 1F6B5931414A680A962BB336F687180B /* PBXContainerItemProxy */;
+		};
+		6CEC1F3B7A3D66DFC039D472976CB054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXAutoScrollView;
+			target = 96242768DA54259A94415C12B435715E /* ZXAutoScrollView */;
+			targetProxy = 602FB78E0F5BB6209E53A985C7472638 /* PBXContainerItemProxy */;
+		};
+		7E90AE72287BE6C1D7128D122E704CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HImagePickerUtils;
+			target = 0ED6D873B958F50E3796405EE10D33A1 /* HImagePickerUtils */;
+			targetProxy = 8AC39A604D6A67A3561A03A0E1CEBA32 /* PBXContainerItemProxy */;
+		};
+		B0132D54B678CF7E232D9134B28D09CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HImagePickerUtils;
+			target = 0ED6D873B958F50E3796405EE10D33A1 /* HImagePickerUtils */;
+			targetProxy = DAE811E072D79AE2576BEE9C67763278 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3BF0D31EB9035B9B69EAB06D1F21BB12 /* Debug */ = {
+		0517B225353A3DFAA79195F8BB1FDFAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04DE6AE374D73D688654EE1A739563ED /* ZXStructs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZXStructs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		07826D16446D75113940FD2213A45170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330D18CBED6A3300477C4A7050569C0E /* ZXAutoScrollView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -485,14 +747,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXAutoScrollView/ZXAutoScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXAutoScrollView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ZXAutoScrollView/ZXAutoScrollView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ZXStructs;
+				PRODUCT_NAME = ZXAutoScrollView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -548,9 +810,9 @@
 			};
 			name = Release;
 		};
-		927D0615A298163E25125829ADE45586 /* Release */ = {
+		837E9723CDDC456D96CB448FA3C06417 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04DE6AE374D73D688654EE1A739563ED /* ZXStructs.xcconfig */;
+			baseConfigurationReference = 330D18CBED6A3300477C4A7050569C0E /* ZXAutoScrollView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -564,14 +826,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ZXAutoScrollView/ZXAutoScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXAutoScrollView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ZXAutoScrollView/ZXAutoScrollView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ZXStructs;
+				PRODUCT_NAME = ZXAutoScrollView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -582,6 +844,153 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		8434F8F9EDDF8F121FED02C79A41D58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E69409A03E149BCBB7F43D0C447116 /* Pods-ZXStructs_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZXStructs_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZXStructs_Example/Pods-ZXStructs_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZXStructs_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9175D2888C4BCE142716C6622FBBD960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589762A9EFA31D6EF2E253D3C4B67237 /* HImagePickerUtils.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HImagePickerUtils/HImagePickerUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HImagePickerUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HImagePickerUtils/HImagePickerUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HImagePickerUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		947D12ECB1968F1D96812C2B112CD61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32FDCC16AA5F2FF882D907A413B3C48 /* Pods-ZXStructs_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZXStructs_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZXStructs_Example/Pods-ZXStructs_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZXStructs_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		964A7BA14B32A3DABC994359A09E540A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DE6AE374D73D688654EE1A739563ED /* ZXStructs.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZXStructs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -632,47 +1041,9 @@
 			};
 			name = Debug;
 		};
-		D419AAE10C870D45B9AB9ED542D0818F /* Release */ = {
+		CF6C4C7E7273201B8D2A0F907E2922F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B32FDCC16AA5F2FF882D907A413B3C48 /* Pods-ZXStructs_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZXStructs_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZXStructs_Example/Pods-ZXStructs_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ZXStructs_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DAFE8870B43D7C8FA7E18FCD9F87307B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5E69409A03E149BCBB7F43D0C447116 /* Pods-ZXStructs_Example.debug.xcconfig */;
+			baseConfigurationReference = 589762A9EFA31D6EF2E253D3C4B67237 /* HImagePickerUtils.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -686,21 +1057,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZXStructs_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HImagePickerUtils/HImagePickerUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HImagePickerUtils/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZXStructs_Example/Pods-ZXStructs_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/HImagePickerUtils/HImagePickerUtils.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ZXStructs_Example;
+				PRODUCT_NAME = HImagePickerUtils;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -712,15 +1079,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21C1512D045CE2C13E89D6A74589B60A /* Build configuration list for PBXNativeTarget "ZXStructs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BF0D31EB9035B9B69EAB06D1F21BB12 /* Debug */,
-				927D0615A298163E25125829ADE45586 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -730,11 +1088,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E77E9F4E8D29C6C643C808703F9DC751 /* Build configuration list for PBXNativeTarget "Pods-ZXStructs_Example" */ = {
+		5C282ADD2BB255B0A63AEF8C0A08B604 /* Build configuration list for PBXNativeTarget "HImagePickerUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAFE8870B43D7C8FA7E18FCD9F87307B /* Debug */,
-				D419AAE10C870D45B9AB9ED542D0818F /* Release */,
+				CF6C4C7E7273201B8D2A0F907E2922F2 /* Debug */,
+				9175D2888C4BCE142716C6622FBBD960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8653CAE7DFB70BC4A6B5039B7E3817 /* Build configuration list for PBXNativeTarget "ZXStructs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964A7BA14B32A3DABC994359A09E540A /* Debug */,
+				0517B225353A3DFAA79195F8BB1FDFAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4CFE1C91D21B9535128403F8A87AEC /* Build configuration list for PBXNativeTarget "ZXAutoScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07826D16446D75113940FD2213A45170 /* Debug */,
+				837E9723CDDC456D96CB448FA3C06417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED726069812C516F82D00B85552B37C6 /* Build configuration list for PBXNativeTarget "Pods-ZXStructs_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8434F8F9EDDF8F121FED02C79A41D58B /* Debug */,
+				947D12ECB1968F1D96812C2B112CD61E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 //
-//  ZXImagePickerUtils.swift
-//  ZXImagePickerUtils
+//  HImagePickerUtils.swift
+//  HSwiftTemp
 //
 //  Created by JuanFelix on 10/28/15.
 //  Copyright © 2015 SKKJ-JuanFelix. All rights reserved.
@@ -12,7 +12,7 @@ import AssetsLibrary
 import MobileCoreServices
 import Photos
 
-public enum HCheckPhotoStatus{
+public enum HStatus{
     case success, canceled, cameraDisable, photoLibDisable, notImage
     case notDetermined
     case restricted
@@ -21,24 +21,24 @@ public enum HCheckPhotoStatus{
     
     public func description() -> String {
         switch self {
-        case .success:
-            return "成功"
-        case .canceled:
-            return "取消选择"
-        case .cameraDisable:
-            return "该设备不支持拍照"
-        case .photoLibDisable:
-            return "该设备不支持资源选择"
-        case .notImage:
-            return "获取的不是图片"
-        case .notDetermined:
-            return "未作出授权选择"
-        case .restricted:
-            return "该功能被禁用"
-        case .denied:
-            return "阻止了相册/相机访问权限"
-        case .authorized:
-            return "已授权"
+            case .success:
+                return "成功"
+            case .canceled:
+                return "取消选择"
+            case .cameraDisable:
+                return "该设备不支持拍照"
+            case .photoLibDisable:
+                return "该设备不支持资源选择"
+            case .notImage:
+                return "获取的不是图片"
+            case .notDetermined:
+                return "未作出授权选择"
+            case .restricted:
+                return "该功能被禁用"
+            case .denied:
+                return "阻止了相册/相机访问权限"
+            case .authorized:
+                return "已授权"
         }
     }
 }
@@ -47,25 +47,25 @@ public enum HChooseType{
     case takePhoto, choosePhoto
     public func description() -> String {
         switch self {
-        case .takePhoto:
-            return "相机"
-        case .choosePhoto:
-            return "相册"
+            case .takePhoto:
+                return "相机"
+            case .choosePhoto:
+                return "相册"
         }
     }
 }
 
-public typealias HCompletion = (UIImage?,HCheckPhotoStatus) -> Void
+public typealias HCompletion = (UIImage?,HStatus) -> Void
 
-/// ZXImagePickerUtils
-public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+/// HImagePickerUtils
+public class HImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     private var pickPhotoEnd: HCompletion?
     
     public func takePhoto(presentFrom rootVC:UIViewController,completion:HCompletion?) {
         self.pickPhotoEnd = completion
-        if ZXImagePickerUtils.isCameraAvailable() && ZXImagePickerUtils.doesCameraSupportTakingPhotos(){
-            ZXImagePickerUtils.cameraAuthorized { (authorized, status) in
+        if HImagePickerUtils.isCameraAvailable() && HImagePickerUtils.doesCameraSupportTakingPhotos(){
+            HImagePickerUtils.cameraAuthorized { (authorized, status) in
                 if authorized || status == .notDetermined {
                     let controller = UIImagePickerController()
                     controller.view.backgroundColor = UIColor.white
@@ -83,20 +83,20 @@ public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavi
                 }
             }
         }else{
-            self.pickPhotoEnd?(nil,HCheckPhotoStatus.cameraDisable)
+            self.pickPhotoEnd?(nil,HStatus.cameraDisable)
         }
     }
     
     public func choosePhoto(presentFrom rootVC:UIViewController,completion:HCompletion?){
         self.pickPhotoEnd = completion
-        if ZXImagePickerUtils.isPhotoLibraryAvailable(){
-            ZXImagePickerUtils.photoAuthorized({ (authorized, status) in
+        if HImagePickerUtils.isPhotoLibraryAvailable(){
+            HImagePickerUtils.photoAuthorized({ (authorized, status) in
                 if authorized || status == .notDetermined {
                     let controller = UIImagePickerController()
                     controller.view.backgroundColor = UIColor.white
                     controller.sourceType = UIImagePickerControllerSourceType.photoLibrary
                     var mediaTypes = [String]()
-                    if ZXImagePickerUtils.canUserPickPhotosFromPhotoLibrary(){
+                    if HImagePickerUtils.canUserPickPhotosFromPhotoLibrary(){
                         mediaTypes.append(kUTTypeImage as String)
                     }
                     controller.allowsEditing = true
@@ -111,7 +111,7 @@ public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavi
                 }
             })
         }else{
-            self.pickPhotoEnd?(nil,HCheckPhotoStatus.photoLibDisable)
+            self.pickPhotoEnd?(nil,HStatus.photoLibDisable)
         }
     }
     
@@ -125,45 +125,45 @@ public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavi
             }else{
                 theImage = info[UIImagePickerControllerOriginalImage] as! UIImage
             }
-            self.pickPhotoEnd?(theImage,HCheckPhotoStatus.success)
+            self.pickPhotoEnd?(theImage,HStatus.success)
         }else{
-            self.pickPhotoEnd?(nil,HCheckPhotoStatus.notImage)
+            self.pickPhotoEnd?(nil,HStatus.notImage)
         }
         picker.dismiss(animated: true, completion: nil)
     }
     
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true) {
-            self.pickPhotoEnd?(nil,HCheckPhotoStatus.canceled)
+        picker.dismiss(animated: true) { 
+            self.pickPhotoEnd?(nil,HStatus.canceled)
         }
     }
     
     //MARK: 用户是否授权
-    public static func cameraAuthorized(_ completion:((Bool,HCheckPhotoStatus) -> Void)?){
+    public static func cameraAuthorized(_ completion:((Bool,HStatus) -> Void)?){
         let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
         switch status {
-        case .authorized:
-            completion?(true,.authorized)
-        case .notDetermined:
-            completion?(false,.notDetermined)
-        case .restricted:
-            completion?(false,.restricted)
-        case .denied:
-            completion?(false,.denied)
+            case .authorized:
+                completion?(true,.authorized)
+            case .notDetermined:
+                completion?(false,.notDetermined)
+            case .restricted:
+                completion?(false,.restricted)
+            case .denied:
+                completion?(false,.denied)
         }
     }
     
-    public static func photoAuthorized(_ completion:((Bool,HCheckPhotoStatus) -> Void)?){
+    public static func photoAuthorized(_ completion:((Bool,HStatus) -> Void)?){
         let status = PHPhotoLibrary.authorizationStatus()
         switch status {
-        case .authorized:
-            completion?(true,.authorized)
-        case .notDetermined:
-            completion?(false,.notDetermined)
-        case .restricted:
-            completion?(false,.restricted)
-        case .denied:
-            completion?(false,.denied)
+            case .authorized:
+                completion?(true,.authorized)
+            case .notDetermined:
+                completion?(false,.notDetermined)
+            case .restricted:
+                completion?(false,.restricted)
+            case .denied:
+                completion?(false,.denied)
         }
     }
     
@@ -195,7 +195,7 @@ public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavi
                 result = true
                 stop[0] = true
             }
-            
+
             
         })
         return result
@@ -237,10 +237,11 @@ public class ZXImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavi
                         UIApplication.shared.openURL(url)
                     }
                 }
+                
             })
             alertVC.addAction(openIt)
             rootVC.present(alertVC, animated: true, completion: nil)
-        } else {
+        }else{
             let alertVC = UIAlertController(title: "提示", message: "请在 '系统设置|隐私|\(type.description())' 中开启相机访问权限", preferredStyle: UIAlertControllerStyle.alert)
             rootVC.present(alertVC, animated: true, completion: nil)
         }

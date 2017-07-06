@@ -8,11 +8,13 @@
 
 import UIKit
 
+@objc
 public protocol ZXAutoScrollViewDataSource : class {
     func numberofPages(_ inScrollView:ZXAutoScrollView) -> Int
-    func zxAutoScrollView(_ scollView:ZXAutoScrollView,pageAt index:Int) -> UIView
+    func zxAutoScrollView(_ scrollView:ZXAutoScrollView,pageAt index:Int) -> UIView
 }
 
+@objc
 public protocol ZXAutoScrollViewDelegate : class {
     func zxAutoScrolView(_ scrollView:ZXAutoScrollView,selectAt index:Int)
 }
@@ -21,7 +23,9 @@ extension ZXAutoScrollViewDelegate {
     func zxAutoScrolView(_ scrollView:ZXAutoScrollView,selectAt index:Int){}
 }
 
-public class ZXAutoScrollView: UIView {
+
+@IBDesignable
+public  class ZXAutoScrollView: UIView {
     weak public var delegate:ZXAutoScrollViewDelegate?
     weak public var dataSource:ZXAutoScrollViewDataSource? {
         didSet{
@@ -50,24 +54,12 @@ public class ZXAutoScrollView: UIView {
         }
     }
     
-    fileprivate func checkAutoFlip () {
-        if totalPage > 1 {
-            if autoFlip {
-                if flipTimer == nil {
-                    flipTimer = Timer.scheduledTimer(timeInterval: flipInterval, target: self, selector: #selector(autoFlipAction), userInfo: nil, repeats: true)
-                    RunLoop.current.add(flipTimer!, forMode: .commonModes)
-                } else {
-                    flipTimer?.fireDate = Date()
-                }
-            } else {
-                self.stopTimer()
-            }
-        }
-    }
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        self.initUI()
+    }
+    
+    fileprivate func initUI() {
         self.scrollView = UIScrollView(frame: frame)
         self.scrollView.delegate = self
         self.scrollView.isPagingEnabled = true
@@ -85,8 +77,13 @@ public class ZXAutoScrollView: UIView {
         self.refreshContentSize()
     }
     
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        self.initUI()
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override public func layoutSubviews() {
@@ -107,7 +104,6 @@ public class ZXAutoScrollView: UIView {
         if dealloc {
             return
         }
-        self.stopTimer()
         currentPage = 0
         self.loadData()
     }
@@ -116,6 +112,7 @@ public class ZXAutoScrollView: UIView {
         if dealloc {
             return
         }
+        self.stopTimer()
         if let dataSource = dataSource {
             self.totalPage = dataSource.numberofPages(self)
             self.pageControl.numberOfPages = self.totalPage
@@ -155,6 +152,21 @@ public class ZXAutoScrollView: UIView {
             }
         }
         self.checkAutoFlip()
+    }
+    
+    fileprivate func checkAutoFlip () {
+        if totalPage > 1 {
+            if autoFlip {
+                if flipTimer == nil {
+                    flipTimer = Timer.scheduledTimer(timeInterval: flipInterval, target: self, selector: #selector(autoFlipAction), userInfo: nil, repeats: true)
+                    RunLoop.current.add(flipTimer!, forMode: .commonModes)
+                } else {
+                    flipTimer?.fireDate = Date()
+                }
+            } else {
+                self.stopTimer()
+            }
+        }
     }
     
     func tapGestureAction() {

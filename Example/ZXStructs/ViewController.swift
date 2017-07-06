@@ -8,12 +8,14 @@
 
 import UIKit
 import ZXStructs
+import ZXAutoScrollView
+import HImagePickerUtils
 
 class ViewController: UIViewController {
     
     var scrollView:ZXAutoScrollView!
     lazy var imagePicker = {
-        return ZXImagePickerUtils()
+        return HImagePickerUtils()
     }()
     
     override func viewDidLoad() {
