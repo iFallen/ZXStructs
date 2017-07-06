@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         scrollView.dataSource = self
         self.view.addSubview(scrollView)
         
+        self.view.backgroundColor = UIColor.zx_customBColor
+        
     }
     
     override func zx_rightBarButtonAction(index: Int) {

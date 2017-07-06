@@ -1,8 +1,8 @@
 {
   "name": "ZXStructs",
-  "version": "0.1.0",
-  "summary": "A short description of ZXStructs.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.9.0",
+  "summary": "ZXStructs.For iOS Common UI Config",
+  "description": "ZXStructs.For iOS Common UI Config.",
   "homepage": "https://github.com/iFallen/ZXStructs",
   "license": {
     "type": "MIT",
@@ -13,12 +13,11 @@
   },
   "source": {
     "git": "https://github.com/iFallen/ZXStructs.git",
-    "tag": "0.1.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "ZXStructs/**/*.swift",
-  "resources": "ZXStructs/ZXSettings.bundle",
-  "public_header_files": "ZXStructs/*.h"
+  "resources": "ZXStructs/ZXSettings.bundle"
 }

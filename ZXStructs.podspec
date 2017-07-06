@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXStructs'
   s.version          = '0.9.0'
-  s.summary          = 'A short description of ZXStructs.'
+  s.summary          = 'ZXStructs.For iOS Common UI Config'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ZXStructs.For iOS Common UI Config.
                        DESC
 
   s.homepage         = 'https://github.com/iFallen/ZXStructs'
@@ -17,5 +17,4 @@ TODO: Add long description of the pod here.
 
   s.source_files          = 'ZXStructs/**/*.swift'
   s.resource              = 'ZXStructs/ZXSettings.bundle'
-  s.public_header_files   = 'ZXStructs/*.h'
 end

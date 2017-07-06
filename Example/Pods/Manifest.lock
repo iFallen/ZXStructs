@@ -1,5 +1,5 @@
 PODS:
-  - ZXStructs (0.1.0)
+  - ZXStructs (0.9.0)
 
 DEPENDENCIES:
   - ZXStructs (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ZXStructs: eac9e8d63fbdf58c662dad2e39a82e0a38e445e3
+  ZXStructs: bd9455fdb50a87bab5f9473f1a5bb6a01113415d
 
 PODFILE CHECKSUM: d211aef3e7927e4a6c4dde5dc5eb154cf7899a3d
 
