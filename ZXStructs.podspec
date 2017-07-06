@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXStructs'
-  s.version          = '0.1.0'
+  s.version          = '0.9.0'
   s.summary          = 'A short description of ZXStructs.'
 
   s.description      = <<-DESC
