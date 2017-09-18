@@ -28,13 +28,6 @@ public class ZXAlertUtils: NSObject {
     public class func showAlert(wihtTitle title:String?,message:String?,buttonTexts:Array<String>,action:((Int)->Void)?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .alert)
-        //var tag = 0
-        //for text in buttonTexts {
-        //    alert.addAction(UIAlertAction.init(title: text , style: .default) { (_) in
-        //        action?(tag)//tag 一样 ，和oc block 有区别
-        //    })
-        //    tag += 1
-        //}
         for text in buttonTexts {
             alert.addAction(UIAlertAction.init(title: text , style: .default) { (alertAction) in
                 let title = alertAction.title
@@ -45,7 +38,7 @@ public class ZXAlertUtils: NSObject {
         UIViewController.zx_keyController().present(alert, animated: true, completion: nil)
     }
     
-    public class func showActionSheet(withTitle title:String?,message:String?,buttonTexts:Array<String>,cancelText:String?,action:((Int)->Void)?) {
+    public class func showActionSheet(withTitle title:String?,message:String?,buttonTexts:Array<String>,cancelText:String?,sender:UIView? = nil,action:((Int)->Void)?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .actionSheet)
         for text in buttonTexts {
@@ -57,6 +50,11 @@ public class ZXAlertUtils: NSObject {
         }
         alert.addAction(UIAlertAction.init(title: cancelText ?? "取消", style: .cancel, handler: nil))
         //tag += 1
+        if let popoverController = alert.popoverPresentationController,let sender = sender {
+            popoverController.sourceView = sender
+            popoverController.sourceRect = sender.bounds
+        }
+
         UIViewController.zx_keyController().present(alert, animated: true, completion: nil)
     }
     

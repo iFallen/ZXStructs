@@ -78,39 +78,27 @@ extension String {
     }
     
     public func zx_priceFormat(_ fontName:String,size:CGFloat,bigSize:CGFloat,color:UIColor) -> NSMutableAttributedString {
-        var price = self
-        if price.characters.count <= 0 {
-            price = "0"
-        }
-        if price.hasPrefix("¥") {
-            price = price.substring(from: 1)
-        }
-        var aRange = NSMakeRange(0, price.characters.count + 1)
-        var pRange = NSMakeRange(1, price.characters.count)
+        var price = self.zx_priceString()
+        let aRange = NSMakeRange(0, price.characters.count)//¥ + 小数部分
+        var pRange = NSMakeRange(1, price.characters.count)//整数部分
+        
         let location = (price as NSString).range(of: ".")
         if  location.length > 0 {
-            if (price.characters.count - 1 - location.location) < 2 {
-                price += "0"
-                aRange = NSMakeRange(0, price.characters.count + 1)
-            }
-            pRange = NSMakeRange(1, location.location)
-        } else {
-            price += ".00"
-            aRange = NSMakeRange(0, price.characters.count + 1)
+            pRange = NSMakeRange(1, location.location)//整数部分
         }
         
-        let formatPrice = NSAttributedString.zx_colorFormat("¥\(price)", color: color, at: aRange)
+        let formatPrice = NSAttributedString.zx_colorFormat(price, color: color, at: aRange)
+        
         formatPrice.zx_appendFont(font: UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size), at: aRange)
         formatPrice.zx_appendFont(font: UIFont(name: fontName, size: bigSize) ?? UIFont.systemFont(ofSize: bigSize), at: pRange)
-        
         return formatPrice
     }
     
     public func zx_priceFormat(color:UIColor?) -> NSMutableAttributedString {
-        return self.zx_priceFormat(UIFont.zx_titleFontName, size: 12, bigSize: 15, color: color ?? UIColor.zx_textColorTitle)
+        return self.zx_priceFormat(UIFont.zx_titleFontName, size: 12, bigSize: 15, color: color ?? UIColor.zx_titleColor)
     }
     
-    public func zx_priceString() -> String {
+    public func zx_priceString(_ unit:Bool = true,currency:String = "¥") -> String {
         var price = self
         if price.characters.count <= 0 {
             price = "0"
@@ -121,12 +109,19 @@ extension String {
         } else if (price.characters.count - 1 - location.location) < 2 {
             price += "0"
         }
-        if !price.hasPrefix("¥") {
-            return "¥\(price)"
+        price = price.replacingOccurrences(of: "(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))", with: ",", options: .regularExpression, range: price.startIndex..<price.endIndex)
+        if unit {
+            if !price.hasPrefix(currency) {
+                return "\(currency)\(price)"
+            }
+        } else {
+            if price.hasPrefix(currency) {
+                return price.substring(from: 1)
+            }
         }
+        
         return price
     }
-    
 }
 
 extension NSNumber {

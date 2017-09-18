@@ -8,18 +8,18 @@
 
 import UIKit
 
-protocol ReuseableView: class {}
+public protocol ReuseableView: class {}
 
 extension ReuseableView where Self: UIView {
-    static var reuseIdentifier: String {
+    public var reuseIdentifier: String {
         return String(describing: self)
     }
 }
 
-protocol NibLoadableView: class {}
+public protocol NibLoadableView: class {}
 
 extension NibLoadableView where Self: UIView {
-    static var NibName: String {
+    public var NibName: String {
         return String(describing: self)
     }
 }

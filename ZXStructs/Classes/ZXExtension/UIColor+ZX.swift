@@ -46,20 +46,20 @@ extension UIColor {
         return zx_colorWithHexString(ZXTintColorConfig.customCColorStr)
     }
     //MARK: - Text-Color
-    public class var zx_textColorTitle: UIColor! {
+    public class var zx_titleColor: UIColor! {
         return zx_colorWithHexString(ZXFontConfig.textColorTitle)
     }
     
-    public class var zx_textColorBody: UIColor! {
+    public class var zx_bodyColor: UIColor! {
         return zx_colorWithHexString(ZXFontConfig.textColorBody)
     }
     
-    public class var zx_textColorMark: UIColor! {
+    public class var zx_markColor: UIColor! {
         return zx_colorWithHexString(ZXFontConfig.textColorMark)
     }
     
     //MARK: - NaviationBar-Color
-    public class var zx_navBarColor: UIColor! {
+    public class var zx_navBarBackgroundColor: UIColor! {
         return zx_colorWithHexString(ZXNavBarConfig.narBarColorStr)
     }
     
@@ -72,7 +72,7 @@ extension UIColor {
     }
     
     //MARK: - Tabbar-Color
-    public class var zx_tabBarColor: UIColor! {
+    public class var zx_tabBarBackgroundColor: UIColor! {
         return zx_colorWithHexString(ZXTabbarConfig.backgroundColorStr)
     }
     
@@ -121,10 +121,10 @@ extension UIColor {
     /// RGBColor
     ///
     /// - Parameters:
-    ///   - r: 0-1
-    ///   - g: 0-1
-    ///   - b: 0-1
-    ///   - a: 0-1
+    ///   - r: 0~1
+    ///   - g: 0~1
+    ///   - b: 0~1
+    ///   - a: 0~1
     /// - Returns: color
     public static func zx_colorRGB(_ r:CGFloat,_ g:CGFloat,_ b:CGFloat,_ a:CGFloat) -> UIColor {
         return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)

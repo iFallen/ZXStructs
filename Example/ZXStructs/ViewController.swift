@@ -11,7 +11,17 @@ import ZXStructs
 import ZXAutoScrollView
 import HImagePickerUtils
 
-class ViewController: UIViewController {
+class ViewController: ZXUIViewController {
+    
+    @IBOutlet weak var lbTitle: UILabel!
+    
+    @IBOutlet weak var lbSubTitle: UILabel!
+    
+    @IBOutlet weak var lbBody: UILabel!
+    
+    @IBOutlet weak var lbMark: UILabel!
+    
+    @IBOutlet weak var lbIconFont: UILabel!
     
     var scrollView:ZXAutoScrollView!
     lazy var imagePicker = {
@@ -28,18 +38,48 @@ class ViewController: UIViewController {
         scrollView.dataSource = self
         self.view.addSubview(scrollView)
         
-        self.view.backgroundColor = UIColor.zx_customBColor
+        self.view.backgroundColor = UIColor.zx_backgroundColor
         
+        
+        
+        ZXNetwork.zx_asyncRequest(withUrl: "http://www.sojson.com/open/api/weather/json.shtml?city=北京", params: nil, method: .get, completion: { (obj, string) in
+            print(obj ?? "")    // json objcet
+            print(string ?? "") //string
+        }, timeOut: { (msg) in
+            print(msg)
+        }) { (code, msg) in
+            print(code,msg)
+        }
+        
+        self.lbTitle.font = UIFont.zx_titleFont()
+        self.lbTitle.text = "Title"
+        self.lbTitle.textColor = UIColor.zx_titleColor
+        
+        self.lbSubTitle.font = UIFont.zx_subTitleFont(fix: -1)
+        self.lbSubTitle.text = "SubTitle"
+        self.lbSubTitle.textColor = UIColor.zx_customCColor
+        
+        self.lbBody.font = UIFont.zx_bodyFont(14)
+        self.lbBody.text = "Body"
+        self.lbBody.textColor = UIColor.zx_bodyColor
+        
+        self.lbMark.font = UIFont.zx_bodyFont(14)
+        self.lbMark.text = "Mark"
+        self.lbMark.textColor = UIColor.zx_markColor
+        
+        self.lbIconFont.font = UIFont.zx_iconFont(25, fix: 1) //size 26
+        self.lbIconFont.text = "A\u{e673}B"
+        self.lbIconFont.textColor = UIColor.zx_customBColor
     }
     
     override func zx_rightBarButtonAction(index: Int) {
         if index == 0 {
             imagePicker.choosePhoto(presentFrom: self, completion: { (image, status) in
-                
+                print(status.description())
             })
         } else {
             imagePicker.takePhoto(presentFrom: self, completion: { (image, status) in
-                
+                print(status.description())
             })
         }
     }

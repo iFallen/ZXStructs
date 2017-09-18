@@ -15,15 +15,6 @@ public enum ZXNavBarButtonItemPosition {
 extension UIViewController {
     //MARK: - Navigation Control
     
-    var zx_navFixSapce:CGFloat {
-        get {
-            if UIDevice.zx_DeviceSizeType() == .s_4_0Inch {
-                return 0
-            }
-            return -8
-        }
-    }
-    
     /// Clear backBarButtonItem Title
     public func zx_clearNavbarBackButtonTitle() {
         let backItem = UIBarButtonItem(title: " ", style: .plain, target: self, action: #selector(self.zx_popviewController(animated:)))
@@ -38,13 +29,13 @@ extension UIViewController {
     ///   - names: image names
     ///   - useOriginalColor: (true - imageColor false - bar tintcolor)
     ///   - position: .left .right
-    public func zx_addNavBarButtonItems(imageNames names:Array<String>,useOriginalColor:Bool,at position:ZXNavBarButtonItemPosition) {
+    public func zx_addNavBarButtonItems(imageNames names:Array<String>,useOriginalColor:Bool,at position:ZXNavBarButtonItemPosition,fixSpace:CGFloat = 0) {
         if names.count > 0 {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for imgName in names {
                 let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = zx_navFixSapce
+                negativeSpacer.width = fixSpace
                 items.append(negativeSpacer)
                 
                 var itemT:UIBarButtonItem!
@@ -84,13 +75,13 @@ extension UIViewController {
     ///   - font: text font (Default:ZXNavBarConfig.navTilteFont)
     ///   - color: text color (Default:UIColor.zx_navBarButtonColor)
     ///   - position: .left .right
-    public func zx_addNavBarButtonItems(textNames names:Array<String>,font:UIFont?,color:UIColor?,at position:ZXNavBarButtonItemPosition) {
+    public func zx_addNavBarButtonItems(textNames names:Array<String>,font:UIFont?,color:UIColor?,at position:ZXNavBarButtonItemPosition,fixSpace:CGFloat = 0) {
         if names.count > 0 {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for title in names {
                 let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = zx_navFixSapce
+                negativeSpacer.width = fixSpace
                 items.append(negativeSpacer)
                 
                 var itemT:UIBarButtonItem!
@@ -126,13 +117,13 @@ extension UIViewController {
     ///   - size: font size
     ///   - color: font color (Default UIColor.zx_navBarButtonColor)
     ///   - position: .left .right
-    public func zx_addNavBarButtonItems(iconFontTexts names:Array<String>,fontSize size:CGFloat,color:UIColor?,at position:ZXNavBarButtonItemPosition) {
+    public func zx_addNavBarButtonItems(iconFontTexts names:Array<String>,fontSize size:CGFloat,color:UIColor?,at position:ZXNavBarButtonItemPosition,fixSpace:CGFloat = 0) {
         if names.count > 0 {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for title in names {
                 let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = zx_navFixSapce
+                negativeSpacer.width = fixSpace
                 items.append(negativeSpacer)
                 
                 var itemT:UIBarButtonItem!
@@ -160,10 +151,10 @@ extension UIViewController {
         }
     }
     
-    public func zx_addNavBarButtonItems(customView view:UIView!,at position:ZXNavBarButtonItemPosition) {
+    public func zx_addNavBarButtonItems(customView view:UIView!,at position:ZXNavBarButtonItemPosition,fixSpace:CGFloat = 0) {
         var items: Array<UIBarButtonItem> = Array()
         let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        negativeSpacer.width = zx_navFixSapce
+        negativeSpacer.width = fixSpace
         items.append(negativeSpacer)
         
         let itemT = UIBarButtonItem.init(customView: view)

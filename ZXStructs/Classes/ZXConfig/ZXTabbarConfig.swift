@@ -122,7 +122,7 @@ extension ZXTabbarConfig: ZXConfigValueProtocol{
     static func active() {
         let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.isTranslucent  = ZXTabbarConfig.isTranslucent
-        tabBarAppearance.barTintColor   = UIColor.zx_tabBarColor
+        tabBarAppearance.barTintColor   = UIColor.zx_tabBarBackgroundColor
         if !ZXTabbarConfig.showSeparatorLine {
             tabBarAppearance.shadowImage = UIImage()
             tabBarAppearance.backgroundImage = UIImage()

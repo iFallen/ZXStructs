@@ -97,7 +97,7 @@ extension ZXNavBarConfig: ZXConfigValueProtocol{
     public static func active(){
         let navBarAppearance = UINavigationBar.appearance()
         navBarAppearance.isTranslucent  = ZXNavBarConfig.isTranslucent
-        navBarAppearance.barTintColor   = UIColor.zx_navBarColor
+        navBarAppearance.barTintColor   = UIColor.zx_navBarBackgroundColor
         navBarAppearance.tintColor      = UIColor.zx_navBarButtonColor
         
         navBarAppearance.titleTextAttributes = {[NSForegroundColorAttributeName: UIColor.zx_navBarTitleColor,NSFontAttributeName: ZXNavBarConfig.navTilteFont(ZXNavBarConfig.titleFontSize)]}()

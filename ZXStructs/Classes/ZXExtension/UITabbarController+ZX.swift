@@ -34,7 +34,7 @@ extension UITabBarController {
             //controller.classForCoder
             mInfo.barItem = item
             ZXPresentVCInfo.zxPresentVCsDic["\((self.viewControllers?.count)!)"] = mInfo
-            xxx_addChileViewController(UIViewController.init(), from: item)
+            xxx_addChildViewController(UIViewController.init(), from: item)
         }else{
             if item.embedInNavigation,!controller.isKind(of: UINavigationController.self) {
                 let nav = UINavigationController.init(rootViewController: controller)
@@ -53,7 +53,7 @@ extension UITabBarController {
         }
     }
     
-    final public func xxx_addChileViewController(_ controller:UIViewController!,from item:ZXTabbarItem) {
+    final public func xxx_addChildViewController(_ controller:UIViewController!,from item:ZXTabbarItem) {
         var normalImage = UIImage.init(named: item.normalImage)
         normalImage     = normalImage?.withRenderingMode(.alwaysOriginal)
         

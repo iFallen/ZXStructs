@@ -10,29 +10,7 @@ import UIKit
 
 extension UIFont {
     
-    //MARK: - Font
-    public class var zx_titleFont: UIFont {
-        return UIFont(name: ZXFontConfig.fontNameTitle, size: zx_titleFontSize)!
-    }
-    
-    public class var zx_subTitleFont: UIFont {
-        return UIFont(name: ZXFontConfig.fontNameTitle, size: zx_subTitleFontSize)!
-    }
-    
-    public class var zx_bodyFont: UIFont {
-        return UIFont(name: ZXFontConfig.fontNameBody, size: zx_bodyFontSize)!
-    }
-    
-    public class var zx_markFont: UIFont {
-        return UIFont(name: ZXFontConfig.fontNameMark, size: zx_markFontSize)!
-    }
-    
-    public class var zx_iconFont: UIFont {
-        return UIFont(name: ZXFontConfig.iconfontName, size: zx_bodyFontSize) ?? UIFont.systemFont(ofSize: zx_bodyFontSize)
-    }
-    
     //MARK: - Font-Name
-    
     public class var zx_titleFontName: String {
         return ZXFontConfig.fontNameTitle
     }
@@ -66,25 +44,51 @@ extension UIFont {
         return ZXFontConfig.fontSizeMark
     }
     
-    //MARK: - Func 
-    public class func zx_titleFont(_ size:CGFloat) -> UIFont {
-        return UIFont(name: ZXFontConfig.fontNameTitle, size: size)!
+    /// TitleFont
+    ///
+    /// - Parameters:
+    ///   - size: Default TitleFontSize
+    ///   - fix: -n or  +n (means  TitleFontSize +/- n)
+    /// - Returns: UIFont
+    public class func zx_titleFont(_ size:CGFloat = zx_titleFontSize,fix:CGFloat = 0) -> UIFont {
+        return UIFont(name: ZXFontConfig.fontNameTitle, size: size + fix)!
     }
     
-    public class func zx_subTitleFont(_ size:CGFloat) -> UIFont {
-        return UIFont(name: ZXFontConfig.fontNameTitle, size: size)!
+    /// SubTitleFont
+    ///
+    /// - Parameters:
+    ///   - size: Default SubTitleFontSize
+    ///   - fix: -n or  +n (means  SubTitleFontSize +/- n)
+    /// - Returns: UIFont
+    public class func zx_subTitleFont(_ size:CGFloat = zx_subTitleFontSize,fix:CGFloat = 0) -> UIFont {
+        return UIFont(name: ZXFontConfig.fontNameTitle, size: size + fix)!
     }
-    
-    public class func zx_bodyFont(_ size:CGFloat) -> UIFont {
-        return UIFont(name: ZXFontConfig.fontNameBody, size: size)!
+    /// BodyFont
+    ///
+    /// - Parameters:
+    ///   - size: Default BodyFontSize
+    ///   - fix: -n or  +n (means  BodyFontSize +/- n)
+    /// - Returns: UIFont
+    public class func zx_bodyFont(_ size:CGFloat = zx_bodyFontSize,fix:CGFloat = 0) -> UIFont {
+        return UIFont(name: ZXFontConfig.fontNameBody, size: size + fix)!
     }
-    
-    public class func zx_markFont(_ size:CGFloat) -> UIFont {
-        return UIFont(name: ZXFontConfig.fontNameMark, size: size)!
+    /// MarkFont
+    ///
+    /// - Parameters:
+    ///   - size: Default MarkFontSize
+    ///   - fix: -n or  +n (means  MarkFontSize +/- n)
+    /// - Returns: UIFont
+    public class func zx_markFont(_ size:CGFloat = zx_markFontSize,fix:CGFloat = 0) -> UIFont {
+        return UIFont(name: ZXFontConfig.fontNameMark, size: size + fix)!
     }
-    
-    public class func zx_iconFont(_ size:CGFloat) -> UIFont {
-        return UIFont(name: ZXFontConfig.iconfontName, size: size) ?? UIFont.systemFont(ofSize: size)
+    /// IconFont
+    ///
+    /// - Parameters:
+    ///   - size: Default IconFontSize
+    ///   - fix: -n or  +n (means  IconFontSize +/- n)
+    /// - Returns: UIFont
+    public class func zx_iconFont(_ size:CGFloat = zx_bodyFontSize,fix:CGFloat = 0) -> UIFont {
+        return UIFont(name: ZXFontConfig.iconfontName, size: size + fix) ?? UIFont.systemFont(ofSize: size)
     }
 
 }
