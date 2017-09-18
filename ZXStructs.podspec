@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
 
   s.source_files          = 'ZXStructs/**/*.swift'
   s.resource              = 'ZXStructs/ZXSettings.bundle'
-  s.dependency            'ZXAutoScrollView'
-  s.dependency            'HImagePickerUtils'
+  # s.dependency            'ZXAutoScrollView'
 end

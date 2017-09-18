@@ -19,13 +19,5 @@
     "ios": "8.0"
   },
   "source_files": "ZXStructs/**/*.swift",
-  "resources": "ZXStructs/ZXSettings.bundle",
-  "dependencies": {
-    "ZXAutoScrollView": [
-
-    ],
-    "HImagePickerUtils": [
-
-    ]
-  }
+  "resources": "ZXStructs/ZXSettings.bundle"
 }

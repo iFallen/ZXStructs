@@ -12,17 +12,15 @@
 		175C5E60CDC26F5630CA558B7C1B43D3 /* UIDevice+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2A0E836F2C61AF185BBEADFA8328E /* UIDevice+ZX.swift */; };
 		197AF6B860E4D8F83DE48C38D47E16E5 /* ZXNavBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7F09AD607AD5D1BAD1F49D6CD98B52 /* ZXNavBarConfig.swift */; };
 		1B1181465227BFAA693210DA5F5DBC6F /* NSObject+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FC5F166D56F6DD94A806F99CAFA9F /* NSObject+ZX.swift */; };
-		1CCEB133F7FAA31E1B8F9ACBCF720F21 /* HImagePickerUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */; };
 		231EA3427F4F96984BD559DC2389D5B8 /* ZXNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946D74DB791FB0C8CEF4EC9DEA0AB0C /* ZXNetwork.swift */; };
-		36705AEAB3D8820C685C8451D45A0C8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */; };
+		36705AEAB3D8820C685C8451D45A0C8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02A1087A37D5FE3535EBFB6C0D5334B /* UIKit.framework */; };
 		3D47260DBF1248B6B98E990216917891 /* ZXAutoScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B58552344C2C106FFA1B0079DE1A5964 /* ZXAutoScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E8C419B723574CC88428B20CF2E2EF4 /* ZXAutoScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */; };
 		4693190233E9BF9F60803118577200F3 /* Pods-ZXStructs_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */; };
-		4E071D7D2FA21BA029D2CA618531E68F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		4E071D7D2FA21BA029D2CA618531E68F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		4FF3F5DB37573207E0EF5102D6FF1BCF /* ZXFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C9189ECBDCAD2C641B02C194C3F45 /* ZXFontConfig.swift */; };
-		50970A01ADFA8E8C39D30D89294DF378 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
 		5AA45AA7D10C301AC12B32985CDBE9FF /* ZXAlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB78F7A866C998532A83495C625D455 /* ZXAlertUtils.swift */; };
 		5C3D81D1B9BD79645B1D1D854F4426C9 /* ZXAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */; };
+		6442844D7DFD81BEA49CF99A785CBAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		697A0DCAEF15688774F22292D896CD60 /* ZXStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97F2DC19277616435385321EDDF5CA5 /* ZXStructs.swift */; };
 		714205B166A588213A998257EDD12DD8 /* Pods-ZXStructs_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1115755F9754C8A87E459C3AAECAAB /* Pods-ZXStructs_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74930D00A754E73365A2497928CC201C /* ZXAutoScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */; };
@@ -37,7 +35,7 @@
 		9FE32523F2C768468F564E5FEE8530D5 /* HImagePickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */; };
 		A0D2F08ABF3053132E576484F2ADF1FE /* ZXAudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C873E35238B2ADCC2A7D6F4D58758 /* ZXAudioUtils.swift */; };
 		A866B196DD59D548651D70A32CEB4792 /* ZXCommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870E2C00DAF9058311CBBBCCF703928 /* ZXCommonUtils.swift */; };
-		B2FD5439EBC2E385541D56E052BB7C4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		B2FD5439EBC2E385541D56E052BB7C4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		B70F72B177EC2261CC1CF4B2ADDC495B /* Bundle+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4164A66FA06FF3A69B3994295B3DAB0 /* Bundle+ZX.swift */; };
 		B7EA93D76728FD137774F7F3E9687BDB /* ZXTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05908E811AB692AA246992984FB4D289 /* ZXTextField.swift */; };
 		D26A92E3549E89B9955F9A6719E8B2BD /* String+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61581EFA0C99F8609506B17E1538DEDA /* String+ZX.swift */; };
@@ -45,10 +43,10 @@
 		DC0003378FC90D7703B3757B3C0592A6 /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904599C1C25CAD5581D3F729E330F9 /* ResuableView.swift */; };
 		DD5A63E289ED4DDCD53327CA62B7039F /* NSAttributedString+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C108DCF12B30BA1F6F285D5A6D724 /* NSAttributedString+ZX.swift */; };
 		E1F84BCF6295C81979B0FEE3B21B4E68 /* ZXTabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07ACF402F980F8872B4E12DA901D43 /* ZXTabbarConfig.swift */; };
-		E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */; };
+		E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		EEA69C75DDD9E65D03394C8947333F95 /* UIColor+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBA2F915AEEBA3B5CC8BE8641AB96EC /* UIColor+ZX.swift */; };
-		F7BE40A2743B26638EAA3EC305DCA836 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */; };
-		F93E3DABD04CF6F13CCDB6120EA99B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */; };
+		F7BE40A2743B26638EAA3EC305DCA836 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26A7C6C07A9AA6DA68F130C37E06956 /* Photos.framework */; };
+		F93E3DABD04CF6F13CCDB6120EA99B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02A1087A37D5FE3535EBFB6C0D5334B /* UIKit.framework */; };
 		FB1596B219DB4DA4198482E5FD83B922 /* ZXSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7530648605D2726982CE10E12601D7C9 /* ZXSettings.bundle */; };
 		FD33F82BA7890B482249FF437456AEB5 /* ZXStructs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8869007EECC7CFEAA1D839847EB8F27 /* ZXStructs-dummy.m */; };
 /* End PBXBuildFile section */
@@ -60,20 +58,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5819E3AFE092CA15776A944EF2071F0B;
 			remoteInfo = ZXStructs;
-		};
-		602FB78E0F5BB6209E53A985C7472638 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 96242768DA54259A94415C12B435715E;
-			remoteInfo = ZXAutoScrollView;
-		};
-		8AC39A604D6A67A3561A03A0E1CEBA32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ED6D873B958F50E3796405EE10D33A1;
-			remoteInfo = HImagePickerUtils;
 		};
 		BF98B778C20A10FF26B9E2DAD3518563 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -125,16 +109,16 @@
 		88904599C1C25CAD5581D3F729E330F9 /* ResuableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
 		8A279FEC19641FECADDB327B2F4E70D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DCF9BECB88598BD7398EF764237F414 /* UIFont+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZX.swift"; sourceTree = "<group>"; };
-		8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HImagePickerUtils.swift; path = HImagePickerUtils/Classes/HImagePickerUtils.swift; sourceTree = "<group>"; };
 		93872CE7290A8B43BFE9D2ADDEEAB72C /* ZXTintColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTintColorConfig.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		945740A58FA87C6E4B65196816C9C84A /* UIViewController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZX.swift"; sourceTree = "<group>"; };
+		95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D303830CEEA5FFA550B6EAC1D66A701 /* UIViewController+ZXNavControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZXNavControl.swift"; sourceTree = "<group>"; };
+		A02A1087A37D5FE3535EBFB6C0D5334B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXAutoScrollView.framework; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FC5F166D56F6DD94A806F99CAFA9F /* NSObject+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ZX.swift"; sourceTree = "<group>"; };
 		AB07ACF402F980F8872B4E12DA901D43 /* ZXTabbarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTabbarConfig.swift; sourceTree = "<group>"; };
-		AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		AFB6B27F6FA7F19EBD77EFAD9C215004 /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
 		B32FDCC16AA5F2FF882D907A413B3C48 /* Pods-ZXStructs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXStructs_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4164A66FA06FF3A69B3994295B3DAB0 /* Bundle+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+ZX.swift"; sourceTree = "<group>"; };
@@ -143,13 +127,11 @@
 		B68E50EF051A6D2C27A61B8ECE4051C9 /* HImagePickerUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HImagePickerUtils.modulemap; sourceTree = "<group>"; };
 		B9515DDFB0DCCD6903BD6892F0211473 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15A01FC497DB06A7FF17990A2FE3252 /* ZXConfigValueProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXConfigValueProtocol.swift; sourceTree = "<group>"; };
-		C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C4C50F54C89099A8EF2F1A4A20F4ECEB /* Pods-ZXStructs_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXStructs_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C54927A800C934AB7C924A6F3ED9D36E /* ZXLocationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXLocationUtils.swift; sourceTree = "<group>"; };
 		C5F7B19896B2DFC3C1CDC3CD998EFA60 /* HImagePickerUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HImagePickerUtils-dummy.m"; sourceTree = "<group>"; };
 		C8869007EECC7CFEAA1D839847EB8F27 /* ZXStructs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXStructs-dummy.m"; sourceTree = "<group>"; };
-		D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HImagePickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26A7C6C07A9AA6DA68F130C37E06956 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		D977F52D3B7C5978AFAEBC866F4BBFA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6C108DCF12B30BA1F6F285D5A6D724 /* NSAttributedString+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+ZX.swift"; sourceTree = "<group>"; };
 		DDA336DB4D271719FF6FADC366FB0858 /* Pods-ZXStructs_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-resources.sh"; sourceTree = "<group>"; };
@@ -160,16 +142,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5250CF5F27C66A00BFF36EDA09632342 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50970A01ADFA8E8C39D30D89294DF378 /* Foundation.framework in Frameworks */,
-				1CCEB133F7FAA31E1B8F9ACBCF720F21 /* HImagePickerUtils.framework in Frameworks */,
-				3E8C419B723574CC88428B20CF2E2EF4 /* ZXAutoScrollView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5E450518704BCC88492274EC19C62A79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +158,14 @@
 				E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */,
 				F7BE40A2743B26638EAA3EC305DCA836 /* Photos.framework in Frameworks */,
 				F93E3DABD04CF6F13CCDB6120EA99B14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0AB802C5C58C88EDA0F39AB69609F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6442844D7DFD81BEA49CF99A785CBAC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +198,14 @@
 			path = "Target Support Files/Pods-ZXStructs_Example";
 			sourceTree = "<group>";
 		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EFA3F5A4484B397B4ED6B7F86D1C6F4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		235AFC0FE4366AEBFB94BAB0E9AA9F31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,16 +224,6 @@
 				B7705C3FD98ABBDC48D5E59682889172 /* ZXAutoScrollView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		377B984B70E03E8E10BAC0B12DB121A6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D8FFE4159FF8339A86D9320D9CE01D7F /* HImagePickerUtils.framework */,
-				C33882E01D53A6C657DA5DBC2E235BC2 /* ZXAutoScrollView.framework */,
-				72065A95F8746A11BD10EFF2D1B8FFAD /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		37B7C2D05259C47F7B2D122A6309201A /* Support Files */ = {
@@ -318,22 +296,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		72065A95F8746A11BD10EFF2D1B8FFAD /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C4C2642AED7DBD5E5D08A7D8AFF9D12B /* Foundation.framework */,
-				AB3EC4755F6C47953BC601CD081C2230 /* Photos.framework */,
-				8E8437FF8E43D8C3EE006CDB879F8D4E /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				E449E00FF7EF8D8405C15DDEAEC3E72C /* Development Pods */,
-				377B984B70E03E8E10BAC0B12DB121A6 /* Frameworks */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				36415FE1197D92D6B60FC0B4BDE3E612 /* Pods */,
 				235AFC0FE4366AEBFB94BAB0E9AA9F31 /* Products */,
 				6EDC872257AAE3B24DA23E671E80F39D /* Targets Support Files */,
@@ -348,6 +316,16 @@
 			);
 			name = HImagePickerUtils;
 			path = HImagePickerUtils;
+			sourceTree = "<group>";
+		};
+		9EFA3F5A4484B397B4ED6B7F86D1C6F4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */,
+				D26A7C6C07A9AA6DA68F130C37E06956 /* Photos.framework */,
+				A02A1087A37D5FE3535EBFB6C0D5334B /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A93E1CA62BA33FE4A3D96931332064A5 /* ZXUIView */ = {
@@ -495,15 +473,13 @@
 			buildConfigurationList = 6D8653CAE7DFB70BC4A6B5039B7E3817 /* Build configuration list for PBXNativeTarget "ZXStructs" */;
 			buildPhases = (
 				B5DA33BD0E97F7B00F5A08153272ABC0 /* Sources */,
-				5250CF5F27C66A00BFF36EDA09632342 /* Frameworks */,
+				C0AB802C5C58C88EDA0F39AB69609F30 /* Frameworks */,
 				0B437A6D5156466D5440E8D41A7E9927 /* Resources */,
 				4C933F57320E1D87F6C5AC1FF26A3B2C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7E90AE72287BE6C1D7128D122E704CD5 /* PBXTargetDependency */,
-				6CEC1F3B7A3D66DFC039D472976CB054 /* PBXTargetDependency */,
 			);
 			name = ZXStructs;
 			productName = ZXStructs;
@@ -660,18 +636,6 @@
 			name = ZXStructs;
 			target = 5819E3AFE092CA15776A944EF2071F0B /* ZXStructs */;
 			targetProxy = 1F6B5931414A680A962BB336F687180B /* PBXContainerItemProxy */;
-		};
-		6CEC1F3B7A3D66DFC039D472976CB054 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZXAutoScrollView;
-			target = 96242768DA54259A94415C12B435715E /* ZXAutoScrollView */;
-			targetProxy = 602FB78E0F5BB6209E53A985C7472638 /* PBXContainerItemProxy */;
-		};
-		7E90AE72287BE6C1D7128D122E704CD5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HImagePickerUtils;
-			target = 0ED6D873B958F50E3796405EE10D33A1 /* HImagePickerUtils */;
-			targetProxy = 8AC39A604D6A67A3561A03A0E1CEBA32 /* PBXContainerItemProxy */;
 		};
 		B0132D54B678CF7E232D9134B28D09CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
