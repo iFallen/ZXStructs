@@ -21,18 +21,18 @@ extension String {
     
     public func substring(from: Int) -> String {
         let fromIndex = index(at: from)
-        return substring(from: fromIndex)
+        return String(self[fromIndex..<self.endIndex])
     }
     
     public func substring(to: Int) -> String {
         let toIndex = index(at: to)
-        return substring(to: toIndex)
+        return String(self[self.startIndex..<toIndex])
     }
     
     public func substring(with r:Range<Int>) -> String {
         let startIndex  = index(at: r.lowerBound)
         let endIndex    = index(at: r.upperBound)
-        return substring(with: startIndex..<endIndex)
+        return String(self[startIndex..<endIndex])
     }
 }
 
@@ -59,7 +59,7 @@ extension String {
     }
     
     public func zx_textRectSize(toFont font:UIFont,limiteSize:CGSize) -> CGSize {
-        let size = (self as NSString).boundingRect(with: limiteSize, options: NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue|NSStringDrawingOptions.truncatesLastVisibleLine.rawValue), attributes: [NSFontAttributeName:font], context: nil).size
+        let size = (self as NSString).boundingRect(with: limiteSize, options: NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue|NSStringDrawingOptions.truncatesLastVisibleLine.rawValue), attributes: [NSAttributedStringKey.font:font], context: nil).size
         return size
     }
     
@@ -70,7 +70,7 @@ extension String {
     public func zx_telSecury() -> String {
         if self.zx_mobileValid() {
             let head = self.substring(with: 0..<3)
-            let tail = self.substring(with: (self.characters.count - 4)..<self.characters.count)
+            let tail = self.substring(with: (self.count - 4)..<self.count)
             return "\(head)****\(tail)"
         } else {
             return self
@@ -78,9 +78,9 @@ extension String {
     }
     
     public func zx_priceFormat(_ fontName:String,size:CGFloat,bigSize:CGFloat,color:UIColor) -> NSMutableAttributedString {
-        var price = self.zx_priceString()
-        let aRange = NSMakeRange(0, price.characters.count)//¥ + 小数部分
-        var pRange = NSMakeRange(1, price.characters.count)//整数部分
+        let price = self.zx_priceString()
+        let aRange = NSMakeRange(0, price.count)//¥ + 小数部分
+        var pRange = NSMakeRange(1, price.count)//整数部分
         
         let location = (price as NSString).range(of: ".")
         if  location.length > 0 {
@@ -100,13 +100,13 @@ extension String {
     
     public func zx_priceString(_ unit:Bool = true,currency:String = "¥") -> String {
         var price = self
-        if price.characters.count <= 0 {
+        if price.count <= 0 {
             price = "0"
         }
         let location = (price as NSString).range(of: ".")
         if  location.length <= 0 {
             price += ".00"
-        } else if (price.characters.count - 1 - location.location) < 2 {
+        } else if (price.count - 1 - location.location) < 2 {
             price += "0"
         }
         price = price.replacingOccurrences(of: "(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))", with: ",", options: .regularExpression, range: price.startIndex..<price.endIndex)

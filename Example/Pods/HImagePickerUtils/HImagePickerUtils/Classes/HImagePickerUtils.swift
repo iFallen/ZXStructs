@@ -140,7 +140,7 @@ public class HImagePickerUtils: NSObject,UIImagePickerControllerDelegate,UINavig
     
     //MARK: 用户是否授权
     public static func cameraAuthorized(_ completion:((Bool,HStatus) -> Void)?){
-        let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
+        let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         switch status {
             case .authorized:
                 completion?(true,.authorized)

@@ -90,7 +90,7 @@ public class ZXTabbarConfig: NSObject {
 
 extension ZXTabbarConfig: ZXConfigValueProtocol{
     static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let configStr = (zxTarbarConfig().object(forKey: key) as? String),configStr.characters.count > 0 {
+        if let configStr = (zxTarbarConfig().object(forKey: key) as? String),configStr.count > 0 {
             return configStr
         }
         return defaultValue
@@ -130,11 +130,11 @@ extension ZXTabbarConfig: ZXConfigValueProtocol{
         
         let tabBarItem = UITabBarItem.appearance()
         if !ZXTabbarConfig.isCustomTitleFont {
-            tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zx_tabBarTitleNormalColor], for: .normal)
-            tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zx_tabBarTitleSelectedColor], for: .selected)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.zx_tabBarTitleNormalColor], for: .normal)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.zx_tabBarTitleSelectedColor], for: .selected)
         }else{
-            tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zx_tabBarTitleNormalColor,NSFontAttributeName:ZXTabbarConfig.customTitleFont], for: .normal)
-            tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.zx_tabBarTitleSelectedColor,NSFontAttributeName:ZXTabbarConfig.customTitleFont], for: .selected)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.zx_tabBarTitleNormalColor,NSAttributedStringKey.font:ZXTabbarConfig.customTitleFont], for: .normal)
+            tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.zx_tabBarTitleSelectedColor,NSAttributedStringKey.font:ZXTabbarConfig.customTitleFont], for: .selected)
         }
     }
 }

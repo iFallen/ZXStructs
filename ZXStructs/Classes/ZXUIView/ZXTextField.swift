@@ -145,10 +145,10 @@ public class ZXTextField: UITextField {
             if let text = textf.text {
                 if inputType == .none {
                     if maxLength > 0 {
-                        if text.characters.count == maxLength {
+                        if text.count == maxLength {
                             zxDelegate?.textFieldDidReachTheMaxLength(self)
-                        } else if text.characters.count > maxLength {
-                            textf.text = text.substring(to: text.index(text.startIndex, offsetBy: maxLength))
+                        } else if text.count > maxLength {
+                            textf.text = text.substring(to: maxLength)
                         }
                     }
                 } else {
@@ -161,10 +161,8 @@ public class ZXTextField: UITextField {
                     }
                     var newText = text
                     if let lastText = lastText {
-                        if text.characters.count > lastText.characters.count {
-                            let startIndex = text.startIndex
-                            let fromIndex = text.index(startIndex, offsetBy: lastText.characters.count)
-                            newText = text.substring(from: fromIndex)
+                        if text.count > lastText.count {
+                            newText = text.substring(from: lastText.count)
                         } else {
                             if text.isEmpty {
                                 self.lastText = nil
@@ -174,15 +172,15 @@ public class ZXTextField: UITextField {
                             return
                         }
                     }
-                    if newText.characters.count > 0 {
+                    if newText.count > 0 {
                         switch inputType {
                         case .number,.telNum:
                             let predicate = NSPredicate.init(format: "SELF MATCHES %@",ZXNUMBERS)
                             if !predicate.evaluate(with: newText) {
                                 textf.text = lastText
                             } else {
-                                //newText.characters.count == 1 [except paste action]
-                                if inputType == .telNum,lastText == nil,newText.characters.count == 1,newText != "1" {
+                                //newText.count == 1 [except paste action]
+                                if inputType == .telNum,lastText == nil,newText.count == 1,newText != "1" {
                                     textf.text = nil
                                     lastText = nil
                                 }
@@ -206,10 +204,10 @@ public class ZXTextField: UITextField {
                     }
                     
                     if maxLength > 0 {
-                        if text.characters.count == maxLength {
+                        if text.count == maxLength {
                             zxDelegate?.textFieldDidReachTheMaxLength(self)
-                        } else if text.characters.count > maxLength {
-                            textf.text = text.substring(to: text.index(text.startIndex, offsetBy: maxLength))
+                        } else if text.count > maxLength {
+                            textf.text = text.substring(to: maxLength)
                         }
                     }
                     
@@ -227,7 +225,7 @@ public class ZXTextField: UITextField {
         return canCopyPaste
     }
     override public func paste(_ sender: Any?) {
-        if inputType != .none,let string = UIPasteboard.general.string,string.characters.count > 0 {
+        if inputType != .none,let string = UIPasteboard.general.string,string.count > 0 {
             let regularString = self.clearText(string)
             UIPasteboard.general.string = regularString
         }

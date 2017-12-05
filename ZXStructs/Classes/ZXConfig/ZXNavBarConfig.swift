@@ -65,7 +65,7 @@ public class ZXNavBarConfig: NSObject {
 
 extension ZXNavBarConfig: ZXConfigValueProtocol{
     public static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let configStr = (zxNavBarConfig().object(forKey: key) as? String),configStr.characters.count > 0 {
+        if let configStr = (zxNavBarConfig().object(forKey: key) as? String),configStr.count > 0 {
             return configStr
         }
         return defaultValue
@@ -100,7 +100,7 @@ extension ZXNavBarConfig: ZXConfigValueProtocol{
         navBarAppearance.barTintColor   = UIColor.zx_navBarBackgroundColor
         navBarAppearance.tintColor      = UIColor.zx_navBarButtonColor
         
-        navBarAppearance.titleTextAttributes = {[NSForegroundColorAttributeName: UIColor.zx_navBarTitleColor,NSFontAttributeName: ZXNavBarConfig.navTilteFont(ZXNavBarConfig.titleFontSize)]}()
+        navBarAppearance.titleTextAttributes = {[NSAttributedStringKey.foregroundColor: UIColor.zx_navBarTitleColor,NSAttributedStringKey.font: ZXNavBarConfig.navTilteFont(ZXNavBarConfig.titleFontSize)]}()
         
         if !ZXNavBarConfig.showSeparatorLine {
             navBarAppearance.shadowImage = UIImage()

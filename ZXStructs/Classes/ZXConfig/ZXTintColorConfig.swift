@@ -58,7 +58,7 @@ public class ZXTintColorConfig: NSObject {
 //MARK: Config Value
 extension ZXTintColorConfig: ZXConfigValueProtocol {
     static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let colorStr = (zxTintColorConfig().object(forKey: key) as? String), colorStr.characters.count > 0 {
+        if let colorStr = (zxTintColorConfig().object(forKey: key) as? String), colorStr.count > 0 {
             return colorStr
         }
         return defaultValue

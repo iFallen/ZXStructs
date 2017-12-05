@@ -36,21 +36,21 @@ extension UIViewController {
     }
     
     //MARK: - 
-    final func xxx_baseKeyboardWillShow(notice:Notification) {
+    @objc final func xxx_baseKeyboardWillShow(notice:Notification) {
         if let userInfo = notice.userInfo as? Dictionary<String, Any> {
             let dt = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
             zx_keyboardWillShow(duration: dt, userInfo:userInfo )
         }
     }
     
-    final func xxx_baseKeyboardWillHide(notice:Notification) {
+    @objc final func xxx_baseKeyboardWillHide(notice:Notification) {
         if let userInfo = notice.userInfo as? Dictionary<String, Any> {
             let dt = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
             zx_keyboardWillHide(duration: dt, userInfo: userInfo)
         }
     }
     
-    final func xxx_baseKeyboardWillChangeFrame(notice:Notification) {
+    @objc final func xxx_baseKeyboardWillChangeFrame(notice:Notification) {
         if let userInfo = notice.userInfo as? Dictionary<String, Any> {
             let beginRect   = userInfo[UIKeyboardFrameBeginUserInfoKey] as! CGRect
             let endRect     = userInfo[UIKeyboardFrameEndUserInfoKey] as! CGRect

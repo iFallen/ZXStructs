@@ -102,7 +102,7 @@ extension UIColor {
             cString = cString.substring(from: 1)
         }
         
-        if (cString.characters.count != 6) {
+        if (cString.count != 6) {
             return UIColor.clear
         }
         let rString = cString.substring(to: 2)

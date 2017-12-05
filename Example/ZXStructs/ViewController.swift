@@ -72,6 +72,10 @@ class ViewController: ZXUIViewController {
         self.lbIconFont.textColor = UIColor.zx_customBColor
     }
     
+    override func zx_keyboardWillHide(duration dt: Double, userInfo: Dictionary<String, Any>) {
+        
+    }
+    
     override func zx_rightBarButtonAction(index: Int) {
         if index == 0 {
             imagePicker.choosePhoto(presentFrom: self, completion: { (image, status) in

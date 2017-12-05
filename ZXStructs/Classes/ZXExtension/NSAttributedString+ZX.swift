@@ -17,9 +17,9 @@ extension NSAttributedString {
         let attrString = NSMutableAttributedString(string: text)
         switch type {
         case .deleteLine:
-            attrString.addAttribute(NSStrikethroughStyleAttributeName, value: NSUnderlineStyle.patternSolid.rawValue|NSUnderlineStyle.styleSingle.rawValue, range: range)
+            attrString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: NSUnderlineStyle.patternSolid.rawValue|NSUnderlineStyle.styleSingle.rawValue, range: range)
         case .underLine:
-            attrString.addAttribute(NSUnderlineStyleAttributeName, value: NSUnderlineStyle.styleSingle.rawValue , range: range)
+            attrString.addAttribute(NSAttributedStringKey.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue , range: range)
         }
         return attrString
     }
@@ -28,7 +28,7 @@ extension NSAttributedString {
     public class func zx_colorFormat(_ text:String,color:UIColor,at range:NSRange) -> NSMutableAttributedString {
         let attrString = NSMutableAttributedString(string: text)
         if range.length > 0 {
-            attrString.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
+            attrString.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
         }
         return attrString
     }
@@ -37,7 +37,7 @@ extension NSAttributedString {
     public class func zx_fontFormat(_ text:String,font:UIFont,at range:NSRange) -> NSMutableAttributedString {
         let attrString = NSMutableAttributedString(string: text)
         if range.length > 0 {
-            attrString.addAttribute(NSFontAttributeName, value: font, range: range)
+            attrString.addAttribute(NSAttributedStringKey.font, value: font, range: range)
         }
         return attrString
     }
@@ -45,10 +45,10 @@ extension NSAttributedString {
 
 extension NSMutableAttributedString {
     public func zx_appendColor(color:UIColor,at range:NSRange) {
-        self.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
+        self.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
     }
     
     public func zx_appendFont(font:UIFont, at range:NSRange) {
-        self.addAttribute(NSFontAttributeName, value: font, range: range)
+        self.addAttribute(NSAttributedStringKey.font, value: font, range: range)
     }
 }

@@ -70,7 +70,7 @@ public class ZXFontConfig: NSObject {
 
 extension ZXFontConfig: ZXConfigValueProtocol {
     static func configStringValue(forKey key: String!, defaultValue: String!) -> String! {
-        if let fontNameStr = (zxFontConfig().object(forKey: key) as? String), fontNameStr.characters.count > 0{
+        if let fontNameStr = (zxFontConfig().object(forKey: key) as? String), fontNameStr.count > 0{
             return fontNameStr
         }
         return defaultValue

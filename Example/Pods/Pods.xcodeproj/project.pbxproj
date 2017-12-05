@@ -81,7 +81,7 @@
 		05908E811AB692AA246992984FB4D289 /* ZXTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTextField.swift; sourceTree = "<group>"; };
 		0A7DAD4B74866D3D663313FF01F088BC /* HImagePickerUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HImagePickerUtils-umbrella.h"; sourceTree = "<group>"; };
 		0DAF7CBC5FEB3FE616D3C87375D04A87 /* HImagePickerUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HImagePickerUtils-prefix.pch"; sourceTree = "<group>"; };
-		11800BBFB70867B7AFF3E84BF434092F /* HImagePickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HImagePickerUtils.framework; path = HImagePickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11800BBFB70867B7AFF3E84BF434092F /* HImagePickerUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HImagePickerUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1870E2C00DAF9058311CBBBCCF703928 /* ZXCommonUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXCommonUtils.swift; sourceTree = "<group>"; };
 		20D49D41358E082DBADE2756796A4D14 /* ZXAutoScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-prefix.pch"; sourceTree = "<group>"; };
 		22EEFD9FA026655E13D906366B4017C3 /* ZXStructs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXStructs-umbrella.h"; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		5DB78F7A866C998532A83495C625D455 /* ZXAlertUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAlertUtils.swift; sourceTree = "<group>"; };
 		61581EFA0C99F8609506B17E1538DEDA /* String+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ZX.swift"; sourceTree = "<group>"; };
 		619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXAutoScrollView-dummy.m"; sourceTree = "<group>"; };
-		61F5D500954CC2390E001FAB2D26F0C3 /* ZXStructs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXStructs.modulemap; sourceTree = "<group>"; };
-		63CA95ABA6EFF80948AB5899E0E96256 /* Pods-ZXStructs_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZXStructs_Example.modulemap"; sourceTree = "<group>"; };
+		61F5D500954CC2390E001FAB2D26F0C3 /* ZXStructs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZXStructs.modulemap; sourceTree = "<group>"; };
+		63CA95ABA6EFF80948AB5899E0E96256 /* Pods-ZXStructs_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZXStructs_Example.modulemap"; sourceTree = "<group>"; };
 		6E7F09AD607AD5D1BAD1F49D6CD98B52 /* ZXNavBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNavBarConfig.swift; sourceTree = "<group>"; };
 		74DCBE1750B0E7C05185454191508208 /* Pods-ZXStructs_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7530648605D2726982CE10E12601D7C9 /* ZXSettings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZXSettings.bundle; path = ZXStructs/ZXSettings.bundle; sourceTree = "<group>"; };
@@ -111,20 +111,20 @@
 		8DCF9BECB88598BD7398EF764237F414 /* UIFont+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZX.swift"; sourceTree = "<group>"; };
 		9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HImagePickerUtils.swift; path = HImagePickerUtils/Classes/HImagePickerUtils.swift; sourceTree = "<group>"; };
 		93872CE7290A8B43BFE9D2ADDEEAB72C /* ZXTintColorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTintColorConfig.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		945740A58FA87C6E4B65196816C9C84A /* UIViewController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZX.swift"; sourceTree = "<group>"; };
 		95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D303830CEEA5FFA550B6EAC1D66A701 /* UIViewController+ZXNavControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ZXNavControl.swift"; sourceTree = "<group>"; };
 		A02A1087A37D5FE3535EBFB6C0D5334B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXAutoScrollView.framework; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EA2807BC0179625B1F4ABC5BD0486C /* ZXAutoScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXAutoScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59FC5F166D56F6DD94A806F99CAFA9F /* NSObject+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ZX.swift"; sourceTree = "<group>"; };
 		AB07ACF402F980F8872B4E12DA901D43 /* ZXTabbarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXTabbarConfig.swift; sourceTree = "<group>"; };
-		AFB6B27F6FA7F19EBD77EFAD9C215004 /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
+		AFB6B27F6FA7F19EBD77EFAD9C215004 /* ZXAutoScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZXAutoScrollView.modulemap; sourceTree = "<group>"; };
 		B32FDCC16AA5F2FF882D907A413B3C48 /* Pods-ZXStructs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXStructs_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4164A66FA06FF3A69B3994295B3DAB0 /* Bundle+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+ZX.swift"; sourceTree = "<group>"; };
 		B58552344C2C106FFA1B0079DE1A5964 /* ZXAutoScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZXAutoScrollView-umbrella.h"; sourceTree = "<group>"; };
-		B67458F960B439F7D12E7431F351A38D /* Pods_ZXStructs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZXStructs_Example.framework; path = "Pods-ZXStructs_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68E50EF051A6D2C27A61B8ECE4051C9 /* HImagePickerUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HImagePickerUtils.modulemap; sourceTree = "<group>"; };
+		B67458F960B439F7D12E7431F351A38D /* Pods_ZXStructs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXStructs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68E50EF051A6D2C27A61B8ECE4051C9 /* HImagePickerUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HImagePickerUtils.modulemap; sourceTree = "<group>"; };
 		B9515DDFB0DCCD6903BD6892F0211473 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15A01FC497DB06A7FF17990A2FE3252 /* ZXConfigValueProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXConfigValueProtocol.swift; sourceTree = "<group>"; };
 		C4C50F54C89099A8EF2F1A4A20F4ECEB /* Pods-ZXStructs_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZXStructs_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		DDA336DB4D271719FF6FADC366FB0858 /* Pods-ZXStructs_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-resources.sh"; sourceTree = "<group>"; };
 		E97F2DC19277616435385321EDDF5CA5 /* ZXStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZXStructs.swift; path = ZXStructs/Classes/ZXStructs.swift; sourceTree = "<group>"; };
 		EF66193E1C8D94EE01B0F6B9B1B927DD /* ZXStructs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXStructs.xcconfig; sourceTree = "<group>"; };
-		EFEEDD58195FDE0CDA488F753E5A4167 /* ZXStructs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZXStructs.framework; path = ZXStructs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEEDD58195FDE0CDA488F753E5A4167 /* ZXStructs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXStructs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E69409A03E149BCBB7F43D0C447116 /* Pods-ZXStructs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZXStructs_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -314,7 +314,6 @@
 				9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */,
 				37B7C2D05259C47F7B2D122A6309201A /* Support Files */,
 			);
-			name = HImagePickerUtils;
 			path = HImagePickerUtils;
 			sourceTree = "<group>";
 		};
@@ -352,7 +351,6 @@
 				57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */,
 				C88E61552FF65EF68C45EF79AA4F151D /* Support Files */,
 			);
-			name = ZXAutoScrollView;
 			path = ZXAutoScrollView;
 			sourceTree = "<group>";
 		};
@@ -531,6 +529,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0ED6D873B958F50E3796405EE10D33A1 = {
+						LastSwiftMigration = 0910;
+					};
+					5819E3AFE092CA15776A944EF2071F0B = {
+						LastSwiftMigration = 0910;
+					};
+					96242768DA54259A94415C12B435715E = {
+						LastSwiftMigration = 0910;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -665,7 +674,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -674,7 +683,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -709,7 +719,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -752,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -788,7 +799,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -862,7 +874,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -926,7 +939,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ZXStructs/ZXStructs-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ZXStructs/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZXStructs/ZXStructs.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -935,7 +948,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -982,7 +996,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1019,7 +1033,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -92,7 +92,7 @@ extension UIViewController {
                 }
                 itemT.tag = n
                 n += 1
-                itemT.setTitleTextAttributes([NSFontAttributeName:font ?? ZXNavBarConfig.navTilteFont(ZXNavBarConfig.barButtonFontSize)!,NSForegroundColorAttributeName: color ?? UIColor.zx_navBarButtonColor!], for: .normal)
+                itemT.setTitleTextAttributes([NSAttributedStringKey.font:font ?? ZXNavBarConfig.navTilteFont(ZXNavBarConfig.barButtonFontSize)!,NSAttributedStringKey.foregroundColor: color ?? UIColor.zx_navBarButtonColor!], for: .normal)
                 items.append(itemT)
             }
             if position == .left {
@@ -132,7 +132,7 @@ extension UIViewController {
                 }else{
                     itemT = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(self.xxx_leftBarButtonAction(sender:)))
                 }
-                itemT.setTitleTextAttributes([NSFontAttributeName: UIFont.zx_iconFont(size),NSForegroundColorAttributeName: color ?? UIColor.zx_navBarButtonColor!], for: .normal)
+                itemT.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.zx_iconFont(size),NSAttributedStringKey.foregroundColor: color ?? UIColor.zx_navBarButtonColor!], for: .normal)
                 itemT.tag = n
                 n += 1
                 items.append(itemT)
@@ -203,15 +203,15 @@ extension UIViewController {
     }
     
     //MARK: -
-    final func xxx_rightBarButtonAction(sender:UIBarButtonItem) {
+    @objc final func xxx_rightBarButtonAction(sender:UIBarButtonItem) {
         zx_rightBarButtonAction(index: sender.tag)
     }
     
-    final func xxx_leftBarButtonAction(sender:UIBarButtonItem) {
+    @objc final func xxx_leftBarButtonAction(sender:UIBarButtonItem) {
         zx_leftBarButtonAction(index: sender.tag)
     }
     
-    func zx_popviewController(animated: Bool) {
+    @objc func zx_popviewController(animated: Bool) {
         self.navigationController?.popViewController(animated: animated)
     }
 }

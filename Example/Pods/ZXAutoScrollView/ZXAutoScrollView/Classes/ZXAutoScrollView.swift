@@ -169,11 +169,11 @@ public  class ZXAutoScrollView: UIView {
         }
     }
     
-    func tapGestureAction() {
+    @objc func tapGestureAction() {
         delegate?.zxAutoScrolView(self, selectAt: currentPage)
     }
     
-    func autoFlipAction() {
+    @objc func autoFlipAction() {
         if totalPage > 1 {
             let offsetX = self.scrollView.contentOffset.x + scrollView.frame.size.width
             let index = Int(offsetX / scrollView.frame.size.width + 0.5)

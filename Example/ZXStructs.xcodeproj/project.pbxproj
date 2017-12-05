@@ -15,6 +15,7 @@
 		6AA31BD01F6F6D0A0086B96D /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AA31BCF1F6F6D0A0086B96D /* iconfont.ttf */; };
 		6AA31BD21F6F708B0086B96D /* ZXUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA31BD11F6F708B0086B96D /* ZXUIViewController.swift */; };
 		6AA31BD71F6F73FC0086B96D /* TextFieldTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA31BD61F6F73FC0086B96D /* TextFieldTestViewController.swift */; };
+		6AA31BD91F6FA1FD0086B96D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA31BD81F6FA1FD0086B96D /* AdSupport.framework */; };
 		77485C3AFC2F0207A4C7BA5D /* Pods_ZXStructs_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1C6CCD70349F550F62B00C /* Pods_ZXStructs_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		6AA31BCF1F6F6D0A0086B96D /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		6AA31BD11F6F708B0086B96D /* ZXUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXUIViewController.swift; sourceTree = "<group>"; };
 		6AA31BD61F6F73FC0086B96D /* TextFieldTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTestViewController.swift; sourceTree = "<group>"; };
+		6AA31BD81F6FA1FD0086B96D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		702FADF3401B2EE6C77FD449 /* ZXStructs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZXStructs.podspec; path = ../ZXStructs.podspec; sourceTree = "<group>"; };
 		AAEAFFA5E9A0E74EE1651A14 /* Pods-ZXStructs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXStructs_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXStructs_Example/Pods-ZXStructs_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C600A195CFDA63BAF2964B89 /* Pods-ZXStructs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXStructs_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXStructs_Tests/Pods-ZXStructs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA31BD91F6FA1FD0086B96D /* AdSupport.framework in Frameworks */,
 				77485C3AFC2F0207A4C7BA5D /* Pods_ZXStructs_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +112,7 @@
 		6BFAAD2E30517BCBCA2B1B7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AA31BD81F6FA1FD0086B96D /* AdSupport.framework */,
 				1A1C6CCD70349F550F62B00C /* Pods_ZXStructs_Example.framework */,
 				FA6C0C405E51B1B823B6C8A4 /* Pods_ZXStructs_Tests.framework */,
 			);
@@ -328,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -368,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -382,11 +386,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZXStructs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -396,11 +401,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZXStructs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
