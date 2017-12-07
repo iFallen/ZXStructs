@@ -3,7 +3,7 @@
 //  ZXAutoScrollView-Swift
 //
 //  Created by JuanFelix on 2017/5/17.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Copyright © 2017年 JuanFelix. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
 //  ZXTextField.swift
 //  ZXTextField
 //
-//  Created by screson on 2017/9/14.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Created by JuanFelix on 2017/9/14.
+//  Copyright © 2017年 JuanFelix. All rights reserved.
 //
 
 import UIKit

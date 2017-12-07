@@ -3,7 +3,7 @@
 //  ZXStructs
 //
 //  Created by JuanFelix on 2017/4/5.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Copyright © 2017年 JuanFelix. All rights reserved.
 //
 
 import UIKit
@@ -23,15 +23,15 @@ extension UIViewController {
         notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
-    open func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {
+    @objc open func zx_keyboardWillShow(duration dt: Double,userInfo:Dictionary<String,Any>) {
         
     }
     
-    open func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {
+    @objc open func zx_keyboardWillHide(duration dt: Double,userInfo:Dictionary<String,Any>) {
         
     }
     
-    open func zx_keyboardWillChangeFrame(beginRect:CGRect,endRect: CGRect,duration dt:Double,userInfo:Dictionary<String,Any>) {
+    @objc open func zx_keyboardWillChangeFrame(beginRect:CGRect,endRect: CGRect,duration dt:Double,userInfo:Dictionary<String,Any>) {
         
     }
     
@@ -73,11 +73,11 @@ extension UIViewController {
     }
     
     //MARK: - 
-    open func zx_refresh() {
+    @objc open func zx_refresh() {
         
     }
     
-    open func zx_loadmore() {
+    @objc open func zx_loadmore() {
         
     }
 }

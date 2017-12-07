@@ -3,7 +3,7 @@
 //  ZXStructs
 //
 //  Created by JuanFelix on 2017/4/5.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Copyright © 2017年 JuanFelix. All rights reserved.
 //
 
 import UIKit
@@ -59,9 +59,9 @@ extension UIViewController {
             }
         }else{
             if position == .left {
-                self.navigationItem.leftBarButtonItem = nil
+                self.navigationItem.leftBarButtonItems = nil
             }else{
-                self.navigationItem.rightBarButtonItem = nil
+                self.navigationItem.rightBarButtonItems = nil
             }
         }
         //self.navigationController?.navigationBar.topItem?.xxx_ButtonItem 效果不对
@@ -102,9 +102,9 @@ extension UIViewController {
             }
         }else{
             if position == .left {
-                self.navigationItem.leftBarButtonItem = nil
+                self.navigationItem.leftBarButtonItems = nil
             }else{
-                self.navigationItem.rightBarButtonItem = nil
+                self.navigationItem.rightBarButtonItems = nil
             }
         }
     }
@@ -144,9 +144,9 @@ extension UIViewController {
             }
         }else{
             if position == .left {
-                self.navigationItem.leftBarButtonItem = nil
+                self.navigationItem.leftBarButtonItems = nil
             }else{
-                self.navigationItem.rightBarButtonItem = nil
+                self.navigationItem.rightBarButtonItems = nil
             }
         }
     }
@@ -170,7 +170,7 @@ extension UIViewController {
     /// Right Bar Button Action
     ///
     /// - Parameter index: index 0...
-    open func zx_rightBarButtonAction(index: Int) {
+    @objc open func zx_rightBarButtonAction(index: Int) {
         
     }
     

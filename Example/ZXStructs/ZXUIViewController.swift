@@ -2,8 +2,8 @@
 //  ZXUIViewController.swift
 //  YDY_GJ_3_5
 //
-//  Created by screson on 2017/4/20.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Created by JuanFelix on 2017/4/20.
+//  Copyright © 2017年 JuanFelix. All rights reserved.
 //
 
 import UIKit
