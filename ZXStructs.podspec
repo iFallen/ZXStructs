@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXStructs'
-  s.version          = '0.9.3'
-  s.summary          = 'ZXStructs.For iOS Common UI Config'
+  s.version          = '0.9.4'
+  s.summary          = 'ZXStructs.For iOS Common UI Config,And UtilityTools'
 
   s.description      = <<-DESC
-  ZXStructs.For iOS Common UI Config.
+  ZXStructs.For iOS Common UI Config,And UtilityTools.
                        DESC
 
   s.homepage         = 'https://github.com/iFallen/ZXStructs'
