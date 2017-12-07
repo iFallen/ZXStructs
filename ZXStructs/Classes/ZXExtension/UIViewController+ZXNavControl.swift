@@ -177,7 +177,7 @@ extension UIViewController {
     /// Left BarButton Action
     ///
     /// - Parameter index: index 0...
-    open func zx_leftBarButtonAction(index: Int) {
+    @objc open func zx_leftBarButtonAction(index: Int) {
         
     }
     
