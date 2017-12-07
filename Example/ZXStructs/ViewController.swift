@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import ZXStructs
 import ZXAutoScrollView
 import HImagePickerUtils
+import ZXStructs
 
 class ViewController: ZXUIViewController {
     
@@ -30,16 +30,17 @@ class ViewController: ZXUIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //UIDevice.zx_DeviceSizeType() == 
         // Do any additional setup after loading the view, typically from a nib.
 //        let string = "hello,world"
         self.zx_addNavBarButtonItems(textNames: ["相册","拍照"], font: nil, color: UIColor.red, at: .right)
-        scrollView = ZXAutoScrollView.init(frame: CGRect(x: 50, y: 100, width: ZX_BOUNDS_WIDTH - 100, height: 100))
+        scrollView = ZXAutoScrollView.init(frame: CGRect(x: 50, y: 100, width: UIScreen.zx_width - 100, height: 100))
         scrollView.delegate = self
         scrollView.dataSource = self
         self.view.addSubview(scrollView)
         
         self.view.backgroundColor = UIColor.zx_backgroundColor
-        
         
         
         ZXNetwork.zx_asyncRequest(withUrl: "http://www.sojson.com/open/api/weather/json.shtml?city=北京", params: nil, method: .get, completion: { (obj, string) in
@@ -120,7 +121,7 @@ extension ViewController: ZXAutoScrollViewDataSource {
 
 extension ViewController: ZXAutoScrollViewDelegate {
     func zxAutoScrolView(_ scrollView: ZXAutoScrollView, selectAt index: Int) {
-        ZXAlertUtils.showAlert(withTitle: nil, message: "Selected At:\(index + 1)")
+        UIAlertController.showAlert(withTitle: nil, message: "Selected At:\(index + 1)")
     }
 }
 

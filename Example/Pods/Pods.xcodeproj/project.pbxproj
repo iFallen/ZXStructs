@@ -18,10 +18,11 @@
 		4693190233E9BF9F60803118577200F3 /* Pods-ZXStructs_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */; };
 		4E071D7D2FA21BA029D2CA618531E68F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		4FF3F5DB37573207E0EF5102D6FF1BCF /* ZXFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361C9189ECBDCAD2C641B02C194C3F45 /* ZXFontConfig.swift */; };
-		5AA45AA7D10C301AC12B32985CDBE9FF /* ZXAlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB78F7A866C998532A83495C625D455 /* ZXAlertUtils.swift */; };
+		5AA45AA7D10C301AC12B32985CDBE9FF /* UIAlertController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB78F7A866C998532A83495C625D455 /* UIAlertController+ZX.swift */; };
 		5C3D81D1B9BD79645B1D1D854F4426C9 /* ZXAutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */; };
 		6442844D7DFD81BEA49CF99A785CBAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
 		697A0DCAEF15688774F22292D896CD60 /* ZXStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97F2DC19277616435385321EDDF5CA5 /* ZXStructs.swift */; };
+		6A6EDC9F1FD68A3D00DD5EDC /* UIScreen+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6EDC9D1FD687CE00DD5EDC /* UIScreen+ZX.swift */; };
 		714205B166A588213A998257EDD12DD8 /* Pods-ZXStructs_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1115755F9754C8A87E459C3AAECAAB /* Pods-ZXStructs_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74930D00A754E73365A2497928CC201C /* ZXAutoScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */; };
 		7EAEC46689610356B7E7357D71FB33BF /* UITabbarController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC55BE689681303371B345A5A90021 /* UITabbarController+ZX.swift */; };
@@ -29,7 +30,7 @@
 		885AD490C8FAC81F89B63BD9FB6559D2 /* UIViewController+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945740A58FA87C6E4B65196816C9C84A /* UIViewController+ZX.swift */; };
 		88F2CFD40A0216F536C9F2E04B8A590A /* UIViewController+ZXNavControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D303830CEEA5FFA550B6EAC1D66A701 /* UIViewController+ZXNavControl.swift */; };
 		90DC0C4BFE5921F0692072E53916AFA7 /* ZXTintColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93872CE7290A8B43BFE9D2ADDEEAB72C /* ZXTintColorConfig.swift */; };
-		94F9D22CBEFB00F905132E2EE7A9CC73 /* ZXDateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793C4EF0808FCAD112C958BEE5CE3AD /* ZXDateUtils.swift */; };
+		94F9D22CBEFB00F905132E2EE7A9CC73 /* Date+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793C4EF0808FCAD112C958BEE5CE3AD /* Date+ZX.swift */; };
 		97B4F669BE76BF176793BE6391DA785E /* HImagePickerUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7DAD4B74866D3D663313FF01F088BC /* HImagePickerUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CE2B9FCEB047AD21601F69C416C7AA1 /* ZXLocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54927A800C934AB7C924A6F3ED9D36E /* ZXLocationUtils.swift */; };
 		9FE32523F2C768468F564E5FEE8530D5 /* HImagePickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */; };
@@ -40,7 +41,7 @@
 		B7EA93D76728FD137774F7F3E9687BDB /* ZXTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05908E811AB692AA246992984FB4D289 /* ZXTextField.swift */; };
 		D26A92E3549E89B9955F9A6719E8B2BD /* String+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61581EFA0C99F8609506B17E1538DEDA /* String+ZX.swift */; };
 		D63DADBB3C922CB9CDC5B1EE53BEBABC /* ZXConfigValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A01FC497DB06A7FF17990A2FE3252 /* ZXConfigValueProtocol.swift */; };
-		DC0003378FC90D7703B3757B3C0592A6 /* ResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904599C1C25CAD5581D3F729E330F9 /* ResuableView.swift */; };
+		DC0003378FC90D7703B3757B3C0592A6 /* ReuseableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904599C1C25CAD5581D3F729E330F9 /* ReuseableView.swift */; };
 		DD5A63E289ED4DDCD53327CA62B7039F /* NSAttributedString+ZX.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C108DCF12B30BA1F6F285D5A6D724 /* NSAttributedString+ZX.swift */; };
 		E1F84BCF6295C81979B0FEE3B21B4E68 /* ZXTabbarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB07ACF402F980F8872B4E12DA901D43 /* ZXTabbarConfig.swift */; };
 		E30292329C2F2E08F547E3E933513742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AF6E9E67D620E639E17F9B0A8B56EF /* Foundation.framework */; };
@@ -91,14 +92,15 @@
 		38D64D570F0CA67834798158FE1453C5 /* Pods-ZXStructs_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZXStructs_Example-dummy.m"; sourceTree = "<group>"; };
 		3946D74DB791FB0C8CEF4EC9DEA0AB0C /* ZXNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNetwork.swift; sourceTree = "<group>"; };
 		3A9C873E35238B2ADCC2A7D6F4D58758 /* ZXAudioUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAudioUtils.swift; sourceTree = "<group>"; };
-		5793C4EF0808FCAD112C958BEE5CE3AD /* ZXDateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXDateUtils.swift; sourceTree = "<group>"; };
+		5793C4EF0808FCAD112C958BEE5CE3AD /* Date+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+ZX.swift"; sourceTree = "<group>"; };
 		57B19B9A676F099B7D14FE6F042DEC27 /* ZXAutoScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZXAutoScrollView.swift; path = ZXAutoScrollView/Classes/ZXAutoScrollView.swift; sourceTree = "<group>"; };
 		589762A9EFA31D6EF2E253D3C4B67237 /* HImagePickerUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HImagePickerUtils.xcconfig; sourceTree = "<group>"; };
-		5DB78F7A866C998532A83495C625D455 /* ZXAlertUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXAlertUtils.swift; sourceTree = "<group>"; };
+		5DB78F7A866C998532A83495C625D455 /* UIAlertController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ZX.swift"; sourceTree = "<group>"; };
 		61581EFA0C99F8609506B17E1538DEDA /* String+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+ZX.swift"; sourceTree = "<group>"; };
 		619B74259DA6E80F7634100D02AB5F5F /* ZXAutoScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZXAutoScrollView-dummy.m"; sourceTree = "<group>"; };
 		61F5D500954CC2390E001FAB2D26F0C3 /* ZXStructs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZXStructs.modulemap; sourceTree = "<group>"; };
 		63CA95ABA6EFF80948AB5899E0E96256 /* Pods-ZXStructs_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZXStructs_Example.modulemap"; sourceTree = "<group>"; };
+		6A6EDC9D1FD687CE00DD5EDC /* UIScreen+ZX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+ZX.swift"; sourceTree = "<group>"; };
 		6E7F09AD607AD5D1BAD1F49D6CD98B52 /* ZXNavBarConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZXNavBarConfig.swift; sourceTree = "<group>"; };
 		74DCBE1750B0E7C05185454191508208 /* Pods-ZXStructs_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZXStructs_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7530648605D2726982CE10E12601D7C9 /* ZXSettings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZXSettings.bundle; path = ZXStructs/ZXSettings.bundle; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 		7DBA2F915AEEBA3B5CC8BE8641AB96EC /* UIColor+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ZX.swift"; sourceTree = "<group>"; };
 		7EAC55BE689681303371B345A5A90021 /* UITabbarController+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabbarController+ZX.swift"; sourceTree = "<group>"; };
 		83D80D8F65AE214166CBDB104C5BFCE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88904599C1C25CAD5581D3F729E330F9 /* ResuableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResuableView.swift; sourceTree = "<group>"; };
+		88904599C1C25CAD5581D3F729E330F9 /* ReuseableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReuseableView.swift; sourceTree = "<group>"; };
 		8A279FEC19641FECADDB327B2F4E70D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DCF9BECB88598BD7398EF764237F414 /* UIFont+ZX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ZX.swift"; sourceTree = "<group>"; };
 		9316E0E1019C199087F24927BECB4246 /* HImagePickerUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HImagePickerUtils.swift; path = HImagePickerUtils/Classes/HImagePickerUtils.swift; sourceTree = "<group>"; };
@@ -243,10 +245,10 @@
 		48A07F911991E1F31C24201DD20B8AC0 /* ZXUtilityTools */ = {
 			isa = PBXGroup;
 			children = (
-				5DB78F7A866C998532A83495C625D455 /* ZXAlertUtils.swift */,
+				5DB78F7A866C998532A83495C625D455 /* UIAlertController+ZX.swift */,
 				3A9C873E35238B2ADCC2A7D6F4D58758 /* ZXAudioUtils.swift */,
 				1870E2C00DAF9058311CBBBCCF703928 /* ZXCommonUtils.swift */,
-				5793C4EF0808FCAD112C958BEE5CE3AD /* ZXDateUtils.swift */,
+				5793C4EF0808FCAD112C958BEE5CE3AD /* Date+ZX.swift */,
 				C54927A800C934AB7C924A6F3ED9D36E /* ZXLocationUtils.swift */,
 			);
 			name = ZXUtilityTools;
@@ -374,10 +376,11 @@
 				B4164A66FA06FF3A69B3994295B3DAB0 /* Bundle+ZX.swift */,
 				DC6C108DCF12B30BA1F6F285D5A6D724 /* NSAttributedString+ZX.swift */,
 				A59FC5F166D56F6DD94A806F99CAFA9F /* NSObject+ZX.swift */,
-				88904599C1C25CAD5581D3F729E330F9 /* ResuableView.swift */,
+				88904599C1C25CAD5581D3F729E330F9 /* ReuseableView.swift */,
 				61581EFA0C99F8609506B17E1538DEDA /* String+ZX.swift */,
 				7DBA2F915AEEBA3B5CC8BE8641AB96EC /* UIColor+ZX.swift */,
 				37B2A0E836F2C61AF185BBEADFA8328E /* UIDevice+ZX.swift */,
+				6A6EDC9D1FD687CE00DD5EDC /* UIScreen+ZX.swift */,
 				8DCF9BECB88598BD7398EF764237F414 /* UIFont+ZX.swift */,
 				7EAC55BE689681303371B345A5A90021 /* UITabbarController+ZX.swift */,
 				945740A58FA87C6E4B65196816C9C84A /* UIViewController+ZX.swift */,
@@ -606,7 +609,7 @@
 				B70F72B177EC2261CC1CF4B2ADDC495B /* Bundle+ZX.swift in Sources */,
 				DD5A63E289ED4DDCD53327CA62B7039F /* NSAttributedString+ZX.swift in Sources */,
 				1B1181465227BFAA693210DA5F5DBC6F /* NSObject+ZX.swift in Sources */,
-				DC0003378FC90D7703B3757B3C0592A6 /* ResuableView.swift in Sources */,
+				DC0003378FC90D7703B3757B3C0592A6 /* ReuseableView.swift in Sources */,
 				D26A92E3549E89B9955F9A6719E8B2BD /* String+ZX.swift in Sources */,
 				EEA69C75DDD9E65D03394C8947333F95 /* UIColor+ZX.swift in Sources */,
 				175C5E60CDC26F5630CA558B7C1B43D3 /* UIDevice+ZX.swift in Sources */,
@@ -614,12 +617,13 @@
 				7EAEC46689610356B7E7357D71FB33BF /* UITabbarController+ZX.swift in Sources */,
 				885AD490C8FAC81F89B63BD9FB6559D2 /* UIViewController+ZX.swift in Sources */,
 				88F2CFD40A0216F536C9F2E04B8A590A /* UIViewController+ZXNavControl.swift in Sources */,
-				5AA45AA7D10C301AC12B32985CDBE9FF /* ZXAlertUtils.swift in Sources */,
+				5AA45AA7D10C301AC12B32985CDBE9FF /* UIAlertController+ZX.swift in Sources */,
 				A0D2F08ABF3053132E576484F2ADF1FE /* ZXAudioUtils.swift in Sources */,
 				A866B196DD59D548651D70A32CEB4792 /* ZXCommonUtils.swift in Sources */,
 				D63DADBB3C922CB9CDC5B1EE53BEBABC /* ZXConfigValueProtocol.swift in Sources */,
-				94F9D22CBEFB00F905132E2EE7A9CC73 /* ZXDateUtils.swift in Sources */,
+				94F9D22CBEFB00F905132E2EE7A9CC73 /* Date+ZX.swift in Sources */,
 				4FF3F5DB37573207E0EF5102D6FF1BCF /* ZXFontConfig.swift in Sources */,
+				6A6EDC9F1FD68A3D00DD5EDC /* UIScreen+ZX.swift in Sources */,
 				9CE2B9FCEB047AD21601F69C416C7AA1 /* ZXLocationUtils.swift in Sources */,
 				197AF6B860E4D8F83DE48C38D47E16E5 /* ZXNavBarConfig.swift in Sources */,
 				231EA3427F4F96984BD559DC2389D5B8 /* ZXNetwork.swift in Sources */,

@@ -7,8 +7,11 @@
 //
 
 import UIKit
-
-public class ZXAlertUtils: NSObject {
+extension UIAlertController {
+    public  static func showNetworkActivityIndicator(_ show:Bool) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = show
+    }
+    
     public class func showAlert(withTitle title:String?,message:String?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .alert)

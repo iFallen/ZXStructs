@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZXStructs
 
 class ZXUIViewController: UIViewController {
     
@@ -15,7 +16,6 @@ class ZXUIViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.zx_clearNavbarBackButtonTitle()
         self.hidesBottomBarWhenPushed = true
-
     }
     
     required init?(coder aDecoder: NSCoder) {

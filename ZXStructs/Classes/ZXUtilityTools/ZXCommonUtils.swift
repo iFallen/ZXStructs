@@ -8,30 +8,37 @@
 
 import UIKit
 
-public class ZXCommonUtils: NSObject {
-    
-    public static func openURL(_ urlstr:String) {
-        if #available(iOS 10.0, *) {
+public typealias ZXFaildCallBack = (_ code: Int,_ errorMsg: String) -> Void
+
+extension URL {
+    public struct zx {
+        public static func openURL(_ urlstr:String,failedCallBack:ZXFaildCallBack?) {
             if let url = URL(string: urlstr) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                if UIApplication.shared.canOpenURL(url) {
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
+                } else {
+                    failedCallBack?(-1, "无法访问")
+                }
+                
+            } else {
+                failedCallBack?(-2, "URL不存在")
             }
-        } else {
-            // Fallback on earlier versions
-            if let url = URL(string: urlstr) {
-                UIApplication.shared.openURL(url)
+        }
+        
+        public static func call(_ tel:String,failedCallBack:ZXFaildCallBack?) {
+            self.openURL("tel://\(tel)") { (code, msg) in
+                failedCallBack?(code, msg)
             }
         }
     }
-    
-    public static func call(_ tel:String) {
-        self.openURL("tel://\(tel)")
-    }
-    
-    public  static func showNetworkActivityIndicator(_ show:Bool) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = show
-    }
-    
-    public static func pasteString(_ text:String) -> String {
+}
+
+extension UIPasteboard {
+    public static func pasteString() -> String {
         let pasteBoard = UIPasteboard.general
         return pasteBoard.string ?? ""
     }

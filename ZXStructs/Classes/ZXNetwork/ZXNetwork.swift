@@ -61,10 +61,10 @@ public class ZXNetwork: NSObject {
         }
         let code = (error as NSError).code
         switch code {
-        case NSURLErrorTimedOut:
-            timeout?("请求数据超时")
-        default:
-            httpError?(code,error.localizedDescription)
+            case NSURLErrorTimedOut:
+                timeout?("请求数据超时")
+            default:
+                httpError?(code,error.localizedDescription)
         }
     }
     
@@ -121,7 +121,7 @@ public class ZXNetwork: NSObject {
                         DispatchQueue.main.async {
                             self.commonProcess(data: data, url: url, completion: completion)
                         }
-                    }else{
+                    }  else {
                         DispatchQueue.main.async {
                             let response = response as! HTTPURLResponse
                             let error = NSError(domain: NSURLErrorDomain, code: response.statusCode, userInfo: nil)
@@ -129,7 +129,7 @@ public class ZXNetwork: NSObject {
                         }
                     }
                     
-                }else{
+                } else {
                     DispatchQueue.main.async {
                         self.httpError(error: error!, url: url, timeout: timeOut, httpError: httpError)
                     }
@@ -137,7 +137,7 @@ public class ZXNetwork: NSObject {
             })
             task.resume()
             return task
-        }else{
+        } else {
             DispatchQueue.main.async {
                 httpError?(ZXAPI_URL_ERROR,"URL地址错误")
             }
@@ -152,6 +152,8 @@ public class ZXNetwork: NSObject {
     ///
     /// - Parameters:
     ///   - url: url
+    ///   - name: API Name (if nil name = "file")
+    ///   - fileNames: fileNames(if nil filename = "yyyyMMddHHmmssSSS.jpg")
     ///   - images: image array
     ///   - params: post params
     ///   - compressRatio: 0 - max compress, 1 - min compress
@@ -160,6 +162,8 @@ public class ZXNetwork: NSObject {
     ///   - httpError: http request error
     /// - Returns: return value description
     @discardableResult public class func zx_uploadImage(to url:String!,
+                                                        name:String?,
+                                                        fileNames:Array<String>?,
                                                         images:Array<UIImage>!,
                                                         params:Dictionary<String,Any>?,
                                                         compressRatio:CGFloat,
@@ -194,13 +198,18 @@ public class ZXNetwork: NSObject {
                 }
             }
             // you can also send multiple images
-            let imageKey = "file"
+            let imageKey = name ?? "file"
             for i in (0..<images.count) {
-                let formatter = DateFormatter();
-                formatter.dateFormat = "yyyyMMddHHmmss";
-                let fileName     = formatter.string(from: Date())// [formatter stringFromDate:[NSDate date]];
+                var fileName:String?
+                if let fName = fileNames?[i] {
+                    fileName = fName
+                } else {
+                    let formatter = DateFormatter();
+                    formatter.dateFormat = "yyyyMMddHHmmssSSS";
+                    fileName = formatter.string(from: Date())
+                }
                 body.append(("--\(boundary)\r\n" as String).data(using: String.Encoding.utf8, allowLossyConversion: true)!)
-                body.append("Content-Disposition: form-data; name=\"\(imageKey)\"; filename=\"\(fileName).jpg\"\r\n" .data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                body.append("Content-Disposition: form-data; name=\"\(imageKey)\"; filename=\"\(fileName!).jpg\"\r\n" .data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 body.append("Content-Type: image/jpeg\r\n\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 
                 // change quality of image here
@@ -239,7 +248,7 @@ public class ZXNetwork: NSObject {
             })
             task.resume()
             return task
-        }else{
+        } else {
             DispatchQueue.main.async {
                 httpError?(ZXAPI_URL_ERROR,"URL地址错误")
             }
@@ -250,11 +259,24 @@ public class ZXNetwork: NSObject {
         return nil
     }
     
+    /// FileUpload
+    ///
+    /// - Parameters:
+    ///   - url: url
+    ///   - name: api Key name (if nil name = "file")
+    ///   - fileNames: file Names
+    ///   - fileDatas: file Datas
+    ///   - mimeType: mimeType
+    ///   - params: -
+    ///   - completion: -
+    ///   - timeOut: -
+    ///   - httpError: -
+    /// - Returns: -
     @discardableResult public class func zx_fileupload(to url:String!,
-                                                       name:String,
-                                                       fileName:String,
+                                                       name:String?,
+                                                       fileNames:Array<String>,
+                                                       fileDatas:Array<Data>,
                                                        mimeType:String,
-                                                       fileData:Data,
                                                        params:Dictionary<String,Any>?,
                                                        completion:ZXHTTPCompletionAction?,
                                                        timeOut:ZXHTTPTimeOutAction?,
@@ -277,7 +299,6 @@ public class ZXNetwork: NSObject {
         if let url1 = URL(string:url!) {
             let boundary: NSString = "----CustomFormBoundarycC4YiaUFwM44F6rT"
             let body: NSMutableData = NSMutableData()
-            
             //params
             if let params = params {
                 let paramsArray = params.keys
@@ -287,13 +308,23 @@ public class ZXNetwork: NSObject {
                     body.append("\(params[item]!)\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
                 }
             }
-            //file
-            body.append(("--\(boundary)\r\n" as String).data(using: String.Encoding.utf8, allowLossyConversion: true)!)
-            body.append("Content-Disposition: form-data; name=\"\(name)\"; filename=\"\(fileName)\"\r\n" .data(using: String.Encoding.utf8, allowLossyConversion: true)!)
-            body.append("Content-Type: \(mimeType)\r\n\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
-            //filedata
-            body.append(fileData)
-            body.append("\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            for i in (0..<fileDatas.count) {
+                var fileName:String?
+                if i < fileNames.count {
+                    fileName = fileNames[i]
+                } else {
+                    let formatter = DateFormatter();
+                    formatter.dateFormat = "yyyyMMddHHmmssSSS";
+                    fileName = formatter.string(from: Date())
+                }
+                //file
+                body.append(("--\(boundary)\r\n" as String).data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                body.append("Content-Disposition: form-data; name=\"\(name ?? "file")\"; filename=\"\(fileName!)\"\r\n" .data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                body.append("Content-Type: \(mimeType)\r\n\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+                //filedata
+                body.append(fileDatas[i])
+                body.append("\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
+            }
             
             //footer
             body.append("--\(boundary)--\r\n".data(using: String.Encoding.utf8, allowLossyConversion: true)!)
@@ -311,7 +342,7 @@ public class ZXNetwork: NSObject {
                         DispatchQueue.main.async {
                             self.commonProcess(data: data, url: url, completion: completion)
                         }
-                    }else{
+                    } else {
                         DispatchQueue.main.async {
                             let response = response as! HTTPURLResponse
                             let error = NSError(domain: NSURLErrorDomain, code: response.statusCode, userInfo: nil)
@@ -319,7 +350,7 @@ public class ZXNetwork: NSObject {
                         }
                     }
                     
-                }else{
+                } else {
                     DispatchQueue.main.async {
                         self.httpError(error: error!, url: url, timeout: timeOut, httpError: httpError)
                     }
@@ -327,7 +358,7 @@ public class ZXNetwork: NSObject {
             })
             task.resume()
             return task
-        }else{
+        } else {
             DispatchQueue.main.async {
                 httpError?(ZXAPI_URL_ERROR,"URL地址错误")
             }

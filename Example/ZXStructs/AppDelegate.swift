@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         ZXStructs.loadUIConfig()
-        print(ZXDateUtils.current.date(false))
-        print(ZXDateUtils.current.time(false))
-        print(ZXDateUtils.current.date(true))
-        print(ZXDateUtils.current.time(true))
-        let ms = ZXDateUtils.current.millisecond()
+        print(Date.Current.date(false))
+        print(Date.Current.time(false))
+        print(Date.Current.date(true))
+        print(Date.Current.time(true))
+        let ms = Date.Current.millisecond()
         print(ms)
-        print(ZXDateUtils.millisecond.dateformat(ms, format: "MM/dd yyyy HH:mm:ss"))
-        print(ZXDateUtils.millisecond.fromDate("06/06 2017 15:21:23", dateFormat: "MM/dd yyyy HH:mm:ss"))
+        print(Date.zx.millisecond.dateformat(ms, format: "MM/dd yyyy HH:mm:ss"))
+        print(Date.zx.millisecond.fromDate("06/06 2017 15:21:23", dateFormat: "MM/dd yyyy HH:mm:ss"))
         return true
     }
 
