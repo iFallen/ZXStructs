@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZXStructs'
-  s.version          = '0.9.5'
+  s.version          = '0.9.6'
   s.summary          = 'ZXStructs.For iOS Common UI Config,And UtilityTools'
 
   s.description      = <<-DESC
