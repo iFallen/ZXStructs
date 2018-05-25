@@ -8,18 +8,18 @@
 
 import UIKit
 extension UIAlertController {
-    public  static func showNetworkActivityIndicator(_ show:Bool) {
+    public static func showNetworkActivityIndicator(_ show:Bool) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = show
     }
     
-    public class func showAlert(withTitle title:String?,message:String?) {
+    public static func showAlert(withTitle title:String?,message:String?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction.init(title: "确定", style: .default, handler: nil))
         UIViewController.zx_keyController().present(alert, animated: true, completion: nil)
     }
     
-    public class func showAlert(wihtTitle title:String?,message:String?,buttonText:String?,action:(()->Void)?) {
+    public static func showAlert(wihtTitle title:String?,message:String?,buttonText:String?,action:(()->Void)?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction.init(title: buttonText ?? "确定", style: .default) { (_) in
@@ -28,7 +28,7 @@ extension UIAlertController {
         UIViewController.zx_keyController().present(alert, animated: true, completion: nil)
     }
     
-    public class func showAlert(wihtTitle title:String?,message:String?,buttonTexts:Array<String>,action:((Int)->Void)?) {
+    public static func showAlert(wihtTitle title:String?,message:String?,buttonTexts:Array<String>,action:((Int)->Void)?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .alert)
         for text in buttonTexts {
@@ -41,7 +41,7 @@ extension UIAlertController {
         UIViewController.zx_keyController().present(alert, animated: true, completion: nil)
     }
     
-    public class func showActionSheet(withTitle title:String?,message:String?,buttonTexts:Array<String>,cancelText:String?,sender:UIView? = nil,action:((Int)->Void)?) {
+    public static func showActionSheet(withTitle title:String?,message:String?,buttonTexts:Array<String>,cancelText:String?,sender:UIView? = nil,action:((Int)->Void)?) {
         let aTitle = title ?? "提示"
         let alert = UIAlertController.init(title: aTitle, message: message, preferredStyle: .actionSheet)
         for text in buttonTexts {

@@ -16,11 +16,22 @@ extension UIViewController {
     //MARK: - Navigation Control
     
     /// Clear backBarButtonItem Title
-    public func zx_clearNavbarBackButtonTitle() {
-        let backItem = UIBarButtonItem(title: " ", style: .plain, target: self, action: #selector(self.zx_popviewController(animated:)))
-        
-        self.navigationItem.backBarButtonItem = backItem
+    ///
+    /// - Parameter replaceBackItem: default true , if false , set the leftBarButtonItem
+    public func zx_clearNavbarBackButtonTitle(replaceBackItem: Bool = true) {
+        if replaceBackItem {
+            let backItem = UIBarButtonItem(title: " ", style: .done, target: self, action: #selector(self.zx_navbackAction))
+            self.navigationItem.backBarButtonItem = backItem
+        } else {
+            let backItem = UIBarButtonItem(image: #imageLiteral(resourceName: "zx_return"), style: .done, target: self, action: #selector(self.zx_navbackAction))
+            self.navigationItem.leftBarButtonItem = backItem
+        }
     }
+    
+    @objc func zx_navbackAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
+
     
     
     /// Add BarButton Item from Image names
@@ -34,9 +45,11 @@ extension UIViewController {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for imgName in names {
-                let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = fixSpace
-                items.append(negativeSpacer)
+                if names.count > 1 {
+                    let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+                    negativeSpacer.width = fixSpace
+                    items.append(negativeSpacer)
+                }
                 
                 var itemT:UIBarButtonItem!
                 var image = UIImage.init(named: imgName)
@@ -80,10 +93,11 @@ extension UIViewController {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for title in names {
-                let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = fixSpace
-                items.append(negativeSpacer)
-                
+                if names.count > 1 {
+                    let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+                    negativeSpacer.width = fixSpace
+                    items.append(negativeSpacer)
+                }
                 var itemT:UIBarButtonItem!
                 if position == .right {
                     itemT = UIBarButtonItem.init(title: title, style: .plain, target: self, action: #selector(self.xxx_rightBarButtonAction(sender:)))
@@ -122,9 +136,11 @@ extension UIViewController {
             var items: Array<UIBarButtonItem> = Array()
             var n = 0
             for title in names {
-                let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-                negativeSpacer.width = fixSpace
-                items.append(negativeSpacer)
+                if names.count > 1 {
+                    let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+                    negativeSpacer.width = fixSpace
+                    items.append(negativeSpacer)
+                }
                 
                 var itemT:UIBarButtonItem!
                 if position == .right {

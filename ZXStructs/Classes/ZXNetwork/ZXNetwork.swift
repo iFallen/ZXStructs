@@ -35,16 +35,15 @@ public class ZXNetwork: NSObject {
                                            completion:ZXHTTPCompletionAction?) {
         var contentString:String? = nil
         if let data = data {
-            do{
+            do {
                 let obj = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
                 contentString = String(data: data, encoding: .utf8)
                 completion?(obj,contentString!)
-            }catch {
+            } catch {
                 contentString = String(data: data, encoding: .utf8)
                 completion?(nil,contentString)
             }
-            
-        }else{
+        } else {
             completion?(nil,nil)
         }
         if showRequestLog {

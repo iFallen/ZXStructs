@@ -193,7 +193,7 @@ extension Date {
         
         public static func dateFromString(_ date:String,format:String) -> Date? {
             let formatter = DateFormatter()
-            formatter.timeZone = self.CHNZONE() as TimeZone!
+            formatter.timeZone = self.CHNZONE() as TimeZone?
             formatter.dateFormat = format
             return formatter.date(from: date)
         }
