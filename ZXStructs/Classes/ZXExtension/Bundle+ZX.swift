@@ -42,24 +42,24 @@ extension Bundle{
     
     
     /// Project Name
-    static var zx_projectName: String! {
+    public static var zx_projectName: String! {
         return self.main.infoDictionary!["CFBundleExecutable"] as! String
     }
     
     
     /// Version
-    static var zx_bundleVersion: String {
+    public static var zx_bundleVersion: String {
         return self.main.infoDictionary!["CFBundleShortVersionString"] as! String
     }
     
     /// Build
-    static var zx_bundleBuild: String {
+    public static var zx_bundleBuild: String {
         return self.main.infoDictionary!["CFBundleVersion"] as! String
     }
     
     
     /// BundleId
-    static var zx_bundleId: String {
+    public static var zx_bundleId: String {
         return self.main.infoDictionary!["CFBundleIdentifier"] as! String
     }
 }

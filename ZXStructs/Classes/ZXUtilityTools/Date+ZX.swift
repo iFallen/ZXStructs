@@ -87,7 +87,8 @@ extension Date {
         }
         
         public struct millisecond {
-            public static func dateformat(_ millisecond:Int64,format:String?) -> String {
+            public static func dateformat(_ millisecond:Int64,
+                                          format:String?) -> String {
                 let formatter = DateFormatter()
                 formatter.timeZone = Date.zx.CHNZONE()
                 if let format = format {
@@ -105,7 +106,9 @@ extension Date {
             ///   - chineseFormat: chineseFormat description
             ///   - timeWithSecond: timeWithSecond description
             /// - Returns: return value description
-            public static func datetime(_ millisecond:Int64,chineseFormat:Bool,timeWithSecond:Bool) -> String {
+            public static func datetime(_ millisecond:Int64,
+                                        chineseFormat:Bool,
+                                        timeWithSecond:Bool) -> String {
                 let formatter = DateFormatter()
                 formatter.timeZone = Date.zx.CHNZONE()
                 if chineseFormat {
@@ -130,7 +133,8 @@ extension Date {
             ///   - millisecond: millisecond description
             ///   - chineseFormat: chineseFormat description
             /// - Returns: return value description
-            public static func date(_ millisecond:Int64,chinese:Bool) -> String {
+            public static func date(_ millisecond:Int64,
+                                    chinese:Bool) -> String {
                 if chinese {
                     return Date.zx.millisecond.dateformat(millisecond,format: "YYYY年MM月dd日")
                 } else {

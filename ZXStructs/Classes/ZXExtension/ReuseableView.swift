@@ -11,7 +11,7 @@ import UIKit
 public protocol ReuseableView: class {}
 
 extension ReuseableView where Self: UIView {
-    public var reuseIdentifier: String {
+    public static var reuseIdentifier: String {
         return String(describing: self)
     }
 }
@@ -19,7 +19,7 @@ extension ReuseableView where Self: UIView {
 public protocol NibLoadableView: class {}
 
 extension NibLoadableView where Self: UIView {
-    public var NibName: String {
+    public static var NibName: String {
         return String(describing: self)
     }
 }
