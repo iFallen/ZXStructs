@@ -42,7 +42,7 @@ extension Bundle{
     
     
     /// Project Name
-    public static var zx_projectName: String! {
+    public static var zx_projectName: String {
         return self.main.infoDictionary!["CFBundleExecutable"] as! String
     }
     

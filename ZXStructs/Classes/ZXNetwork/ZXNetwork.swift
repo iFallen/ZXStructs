@@ -170,7 +170,7 @@ public class ZXNetwork: NSObject {
                                                         timeOut:ZXHTTPTimeOutAction?,
                                                         httpError:ZXHTTPErrorAction?) -> URLSessionTask? {
         if showRequestLog {
-            print("\n------------Request------------\n请求地址:\n\(url)\n请求参数:\n\(String(describing: params))\n---------------------------\n")
+            print("\n------------Request------------\n请求地址:\n\(String(describing: url))\n请求参数:\n\(String(describing: params))\n---------------------------\n")
         }
         var paramsString: String?
         var arrParams:Array<String>?
@@ -252,7 +252,7 @@ public class ZXNetwork: NSObject {
                 httpError?(ZXAPI_URL_ERROR,"URL地址错误")
             }
             if showRequestLog {
-                print("\n------------Response------------\n请求地址:\n\(url)\n错误:URL地址错误\n---------------------------\n")
+                print("\n------------Response------------\n请求地址:\n\(String(describing: url))\n错误:URL地址错误\n---------------------------\n")
             }
         }
         return nil
@@ -281,7 +281,7 @@ public class ZXNetwork: NSObject {
                                                        timeOut:ZXHTTPTimeOutAction?,
                                                        httpError:ZXHTTPErrorAction?) -> URLSessionTask? {
         if showRequestLog {
-            print("\n------------Request------------\n请求地址:\n\(url)\n请求参数:\n\(String(describing: params))\n---------------------------\n")
+            print("\n------------Request------------\n请求地址:\n\(String(describing: url))\n请求参数:\n\(String(describing: params))\n---------------------------\n")
         }
         var paramsString: String?
         var arrParams:Array<String>?
@@ -362,7 +362,7 @@ public class ZXNetwork: NSObject {
                 httpError?(ZXAPI_URL_ERROR,"URL地址错误")
             }
             if showRequestLog {
-                print("\n------------Response------------\n请求地址:\n\(url)\n错误:URL地址错误\n---------------------------\n")
+                print("\n------------Response------------\n请求地址:\n\(String(describing: url))\n错误:URL地址错误\n---------------------------\n")
             }
         }
         return nil
