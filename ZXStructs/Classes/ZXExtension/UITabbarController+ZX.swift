@@ -98,7 +98,7 @@ extension UITabBarController {
                 }
             }
         }
-        return true;
+        return true
     }
 }
 

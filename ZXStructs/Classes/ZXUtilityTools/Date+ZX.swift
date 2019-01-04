@@ -21,15 +21,15 @@ extension Date {
             formatter.timeZone = Date.zx.CHNZONE()
             if chineseFormat {
                 if timeWithSecond {
-                    formatter.dateFormat = "YYYY年MM月dd日 HH:mm:ss"
+                    formatter.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
                 }else{
-                    formatter.dateFormat = "YYYY年MM月dd日 HH:mm"
+                    formatter.dateFormat = "yyyy年MM月dd日 HH:mm"
                 }
             }else {
                 if timeWithSecond {
-                    formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+                    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 }else{
-                    formatter.dateFormat = "YYYY-MM-dd HH:mm"
+                    formatter.dateFormat = "yyyy-MM-dd HH:mm"
                 }
             }
             return formatter.string(from: Date())
@@ -43,9 +43,9 @@ extension Date {
             let formatter = DateFormatter()
             formatter.timeZone = Date.zx.CHNZONE()
             if chineseFormat {
-                formatter.dateFormat = "YYYY年MM月dd日"
+                formatter.dateFormat = "yyyy年MM月dd日"
             }else {
-                formatter.dateFormat = "YYYY-MM-dd"
+                formatter.dateFormat = "yyyy-MM-dd"
             }
             return formatter.string(from: Date())
         }
@@ -94,7 +94,7 @@ extension Date {
                 if let format = format {
                     formatter.dateFormat = format
                 } else {
-                    formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+                    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 }
                 return formatter.string(from: Date(timeIntervalSince1970: TimeInterval(millisecond / 1000)))
             }
@@ -113,15 +113,15 @@ extension Date {
                 formatter.timeZone = Date.zx.CHNZONE()
                 if chineseFormat {
                     if timeWithSecond {
-                        formatter.dateFormat = "YYYY年MM月dd日 HH:mm:ss"
+                        formatter.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
                     }else{
-                        formatter.dateFormat = "YYYY年MM月dd日 HH:mm"
+                        formatter.dateFormat = "yyyy年MM月dd日 HH:mm"
                     }
                 }else {
                     if timeWithSecond {
-                        formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+                        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                     }else{
-                        formatter.dateFormat = "YYYY-MM-dd HH:mm"
+                        formatter.dateFormat = "yyyy-MM-dd HH:mm"
                     }
                 }
                 return formatter.string(from: Date(timeIntervalSince1970: TimeInterval(millisecond / 1000)))
@@ -136,9 +136,9 @@ extension Date {
             public static func date(_ millisecond:Int64,
                                     chinese:Bool) -> String {
                 if chinese {
-                    return Date.zx.millisecond.dateformat(millisecond,format: "YYYY年MM月dd日")
+                    return Date.zx.millisecond.dateformat(millisecond,format: "yyyy年MM月dd日")
                 } else {
-                    return Date.zx.millisecond.dateformat(millisecond,format: "YYYY-MM-dd")
+                    return Date.zx.millisecond.dateformat(millisecond,format: "yyyy-MM-dd")
                 }
             }
             
@@ -206,7 +206,7 @@ extension Date {
     public func zx_DateString(_ seperator:String) -> String {
         let formatter = DateFormatter()
         formatter.timeZone = NSTimeZone(forSecondsFromGMT: +28800) as TimeZone
-        formatter.dateFormat = "YYYY\(seperator)MM\(seperator)dd"
+        formatter.dateFormat = "yyyy\(seperator)MM\(seperator)dd"
         return formatter.string(from: self)
     }
 

@@ -24,7 +24,7 @@ extension Timer {
     
     class func xxx_scheduledTimer (timeInterval: TimeInterval,
                                    repeats: Bool,
-                                   completion:((_ timer:Timer)->())) -> Timer{
+                                   completion:@escaping ((_ timer:Timer)->())) -> Timer{
         return Timer.scheduledTimer(timeInterval: timeInterval,
                                     target: self,
                                     selector: #selector(xxx_completionLoop(timer:)),
